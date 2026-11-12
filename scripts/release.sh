@@ -61,8 +61,7 @@ case "${1:-}" in
     VERSION="$(next_version)"
     {
       cat "$TMP"
-      echo
-      echo "<sub>${LAST:+[changes since $LAST](../../compare/$LAST...$VERSION)}</sub>"
+      if [ -n "$LAST" ]; then echo; echo "<sub>[changes since $LAST](../../compare/$LAST...$VERSION)</sub>"; fi
     } > "$TMP.body"
     gh release create "$VERSION" --target "$SHA" --title "$VERSION" --notes-file "$TMP.body"
     rm -f "$TMP.body"
