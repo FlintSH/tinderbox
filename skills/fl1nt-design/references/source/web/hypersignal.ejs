@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hypersignal</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/css/hypersignal.min.css?v=<%= hypersignalCssVersion %>">
+</head>
+<body>
+  <canvas id="hypersignal-canvas" aria-hidden="true"></canvas>
+
+  <div class="hypersignal-noise" aria-hidden="true"></div>
+  <div class="hypersignal-scanlines" aria-hidden="true"></div>
+  <div class="hypersignal-vignette" aria-hidden="true"></div>
+  <div class="hypersignal-secret-layer" aria-hidden="true">
+    <span class="hypersignal-secret-fragment fragment-a">03:17 / no carrier</span>
+    <span class="hypersignal-secret-fragment fragment-b">the door is round</span>
+    <span class="hypersignal-secret-fragment fragment-c">orbit the bright absence</span>
+    <span class="hypersignal-secret-fragment fragment-d">faster than thought</span>
+    <span class="hypersignal-secret-fragment fragment-e">complete the mouth</span>
+    <span class="hypersignal-secret-fragment fragment-f">it opens while held</span>
+  </div>
+  <div class="hypersignal-memory-layer" aria-live="polite">
+    <button class="hypersignal-memory-node memory-a" type="button" data-mode="signal" data-memory="I like cities more at night. Everything feels more honest when most people have gone home.">
+      <span>17</span>
+    </button>
+    <button class="hypersignal-memory-node memory-b" type="button" data-mode="signal" data-memory="I think nostalgia is dangerous, but I still chase it constantly. Especially old internet nostalgia.">
+      <span>HF</span>
+    </button>
+    <button class="hypersignal-memory-node memory-c" type="button" data-mode="signal" data-memory="I trust people who can sit in silence without trying to fill it. That says more than most conversations.">
+      <span>03</span>
+    </button>
+    <button class="hypersignal-memory-node memory-d" type="button" data-mode="secret" data-memory="I have a soft spot for things that are a little ugly but sincere. Perfect taste is usually boring.">
+      <span>00</span>
+    </button>
+    <button class="hypersignal-memory-node memory-e" type="button" data-mode="secret" data-memory="I think being cringe is mostly just evidence that someone cared enough to try. I respect that more than detachment.">
+      <span>2X</span>
+    </button>
+    <button class="hypersignal-memory-node memory-f" type="button" data-mode="secret" data-memory="I remember tiny kindnesses for years. I also remember weird vibes instantly and usually trust them.">
+      <span>??</span>
+    </button>
+  </div>
+
+  <audio id="hypersignal-audio" loop preload="auto" autoplay>
+    <source src="/sounds/easter-egg.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hypersignal-secret-audio" loop preload="auto">
+    <source src="/sounds/easter-egg-secret.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="hypersignal-shell" aria-label="Hypersignal music visualizer">
+    <header class="hypersignal-hud">
+      <a class="hypersignal-exit" href="/">[ disconnect ]</a>
+      <div class="hypersignal-readout">
+        <button id="hypersignal-mute" type="button">[ mute ]</button>
+      </div>
+    </header>
+
+    <section class="hypersignal-title-card" aria-live="polite">
+      <h1>HYPERSIGNAL</h1>
+      <button id="hypersignal-start" type="button">
+        <span>[ click to start signal ]</span>
+      </button>
+    </section>
+  </main>
+  <div class="hypersignal-fps-counter" id="hypersignal-fps-counter" aria-label="Visualizer framerate">fps --</div>
+  <div class="hypersignal-music-credit" aria-label="Music credit">
+    <span>music by</span>
+    <strong>knx</strong>
+  </div>
+
+  <script src="/scripts/hypersignal.min.js?v=<%= hypersignalJsVersion %>"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "general:border_size": {
+    "option": "general:border_size",
+    "int": 1,
+    "set": true
+  },
+  "general:gaps_in": {
+    "option": "general:gaps_in",
+    "css": "6 6 6 6",
+    "set": true
+  },
+  "general:gaps_out": {
+    "option": "general:gaps_out",
+    "css": "12 12 12 12",
+    "set": true
+  },
+  "general:col.active_border": {
+    "option": "general:col.active_border",
+    "gradient": "ff867cff 0deg",
+    "set": true
+  },
+  "general:col.inactive_border": {
+    "option": "general:col.inactive_border",
+    "gradient": "ff6b63cc 0deg",
+    "set": true
+  },
+  "decoration:rounding": {
+    "option": "decoration:rounding",
+    "int": 10,
+    "set": true
+  },
+  "decoration:active_opacity": {
+    "option": "decoration:active_opacity",
+    "float": 1.0,
+    "set": true
+  },
+  "decoration:inactive_opacity": {
+    "option": "decoration:inactive_opacity",
+    "float": 0.95,
+    "set": true
+  },
+  "decoration:blur:size": {
+    "option": "decoration:blur:size",
+    "int": 6,
+    "set": true
+  },
+  "decoration:blur:passes": {
+    "option": "decoration:blur:passes",
+    "int": 2,
+    "set": true
+  }
+}

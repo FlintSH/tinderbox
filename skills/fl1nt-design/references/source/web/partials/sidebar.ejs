@@ -1,0 +1,183 @@
+<aside class="widgets-sidebar">
+  
+  <div class="widget now-playing music">
+    <h3 class="widget-title">// Now Playing</h3>
+    <div class="music-tracker">
+      <div class="track-info">
+        <div class="album-cover album-art">
+          <div class="image-container">
+            <img src="https://placehold.co/64x64" alt="Album Cover">
+          </div>
+        </div>
+        <div class="track-details">
+          <div class="track-status">
+            <span class="status-dot"></span>
+            <span class="music-status-text">Not Listening</span>
+          </div>
+          <div class="song-title">Song Title</div>
+          <div class="artist">Artist Name</div>
+        </div>
+      </div>
+      <div class="last-played">Last: 01/01/2022 12:00:00</div>
+    </div>
+  </div>
+
+  <div class="widget blog-widget">
+    <h3 class="widget-title">// Recent Posts</h3>
+    <% if (blogs && blogs.length > 0) { %>
+      <div class="recent-posts-list">
+        <% blogs.slice(0, 3).forEach(function(blog, index) { %>
+          <article class="post-item">
+            <div class="post-date-small"><%= blog.date %></div>
+            <h4 class="post-title-small">
+              <a href="/blog/<%= blog.slug %>" class="post-link-small"><%= blog.title %></a>
+            </h4>
+          </article>
+        <% }); %>
+      </div>
+      <div class="view-all-link">
+        <a href="/blog" class="view-all-small">View all posts →</a>
+      </div>
+    <% } else { %>
+      <div class="no-posts-widget">
+        <div class="empty-message">No posts yet!</div>
+        <a href="/blog" class="view-all-small">View Blog →</a>
+      </div>
+    <% } %>
+  </div>
+
+  <div class="widget webring-widget">
+    <h3 class="widget-title">// Webring & Links</h3>
+    
+    <div class="button-carousel">
+      <div class="button-track">
+        <a href="https://www.archlinux.org/" target="_blank">
+          <img src="/images/buttons/arch.gif" alt="Arch Linux" />
+        </a>
+        <a href="/guestbook">
+          <img src="/images/buttons/guestbook.gif" alt="Guestbook" />
+        </a>
+        <a href="https://birb.works" target="_blank">
+          <img src="/images/buttons/birb.gif" alt="Birb Works" />
+        </a>
+        <a href="https://cdn.fl1nt.dev/" target="_blank">
+          <img src="/images/buttons/cdn.gif" alt="CDN" />
+        </a>
+        <a href="https://kz-n-net.vercel.app" target="_blank">
+          <img src="/images/buttons/kzn.png" alt="KZ-N-NET" />
+        </a>
+        <a href="https://thebeemc.carrd.co/" target="_blank">
+          <img src="/images/buttons/thebee.gif" alt="The Bee MC" />
+        </a>
+        <a href="https://legcord.app/" target="_blank">
+          <img src="/images/buttons/armcord.gif" alt="ArmCord" />
+        </a>
+        <a href="https://pzurek.dev/" target="_blank">
+          <img src="/images/buttons/pzurek.png" alt="pzurek.dev" />
+        </a>
+      </div>
+    </div>
+
+    <div class="link-back-section">
+      <div class="section-divider">Hotlink my Button!</div>
+      <div class="button-share-compact">
+        <div class="button-and-copy">
+          <div class="image-container">
+            <img src="/images/mybutton.gif" alt="fl1nt.dev button" id="my-button" />
+          </div>
+          <button class="copy-button" onclick="copyButtonCode()">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="widget commits-widget">
+    <h3 class="widget-title">// Latest Commits</h3>
+    <% if (commits && commits.length > 0) { %>
+      <div class="commits-list">
+        <% commits.slice(0, 3).forEach(function(commit) { %>
+          <% if (commit.isPrivate) { %>
+            <div class="commit-notification private-commit">
+              <div class="notification-icon">
+                <div class="github-avatar"></div>
+                <div class="private-lock">
+                  <img src="/images/locked.svg" alt="Private" class="lock-icon" />
+                </div>
+              </div>
+              <div class="notification-content">
+                <div class="notification-action"><%= commit.message %></div>
+                <div class="notification-time">
+                  <%= commit.timeAgo %> in <%= commit.repo %> (private)
+                </div>
+              </div>
+            </div>
+          <% } else { %>
+            <a href="<%= commit.url %>" target="_blank" class="commit-notification">
+              <div class="notification-icon">
+                <div class="github-avatar"></div>
+              </div>
+              <div class="notification-content">
+                <div class="notification-action"><%= commit.message %></div>
+                <div class="notification-time">
+                  <%= commit.timeAgo %> in <%= commit.repo %>
+                </div>
+              </div>
+            </a>
+          <% } %>
+        <% }); %>
+      </div>
+    <% } else { %>
+      <a href="https://github.com/FlintSH" target="_blank" class="commit-notification inactive">
+        <div class="notification-icon">
+          <div class="github-avatar inactive"></div>
+        </div>
+        <div class="notification-content">
+          <div class="notification-action">no activity</div>
+          <div class="notification-time">check GitHub for updates</div>
+        </div>
+      </a>
+    <% } %>
+    <div class="view-all-link">
+      <a href="https://github.com/FlintSH" target="_blank" class="view-all-small">View GitHub →</a>
+    </div>
+  </div>
+
+  <div class="widget counter-widget">
+    <h3 class="widget-title">// Click Counter</h3>
+    <div class="click-tracker">
+      <div class="click-display">
+        <div class="click-stats">
+          <div class="total-clicks">0 Clicks</div>
+          <div class="total-contributors">0 Contributors</div>
+        </div>
+        <div class="box click-button"></div>
+      </div>
+      <div class="last-clicked">Last clicked <span id="last-clicked-time">never</span></div>
+    </div>
+  </div>
+
+  <div class="widget settings-widget">
+    <h3 class="widget-title">// Settings</h3>
+    <div class="setting-options">
+      <label class="setting-item">
+        <input type="checkbox" id="toggleNotifs" />
+        <span>Disable chat sounds</span>
+      </label>
+      <label class="setting-item">
+        <input type="checkbox" id="hideOwnCursor" />
+        <span>Hide my cursor from others</span>
+      </label>
+      <label class="setting-item">
+        <input type="checkbox" id="hideOthersCursors" />
+        <span>Hide others' cursors</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="widget footer-sprite">
+    <div class="image-container">
+      <img id="enderman" src="/images/enderman.gif" alt="Enderman" />
+    </div>
+  </div>
+
+</aside>

@@ -1,0 +1,164 @@
+{
+  "note": "Third-party skills and plugins in tinderbox. They are pinned here, not copied. scripts/install.sh fetches the git sources at these commits.",
+  "skills": [
+    {
+      "name": "Vercel agent skills",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "pin": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "license": "MIT",
+      "skills": [
+        {
+          "name": "vercel-react-best-practices",
+          "path": "skills/react-best-practices"
+        },
+        {
+          "name": "vercel-composition-patterns",
+          "path": "skills/composition-patterns"
+        },
+        {
+          "name": "web-design-guidelines",
+          "path": "skills/web-design-guidelines"
+        }
+      ]
+    },
+    {
+      "name": "Remotion skills (portable snapshot of the Codex curated plugin)",
+      "source": "remotion@openai-curated-remote",
+      "pin": "4.0.534",
+      "license": "see upstream",
+      "skills": [
+        "remotion-best-practices",
+        "remotion-captions",
+        "remotion-create",
+        "remotion-docs",
+        "remotion-interactivity",
+        "remotion-maps",
+        "remotion-markup",
+        "remotion-multimedia",
+        "remotion-render",
+        "remotion-saas",
+        "remotion-studio",
+        "remotion-upgrade"
+      ],
+      "install": "manual: codex plugin add remotion@openai-curated-remote, then copy its skills into ~/.agents/skills and ~/.claude/skills"
+    },
+    {
+      "name": "untangle-codebase",
+      "source": "https://github.com/caldoai/skills",
+      "pin": "f3cf47774975a7d9fca45730babf4ff7ad765ada",
+      "license": "see upstream LICENSE",
+      "skills": [
+        {
+          "name": "untangle-codebase",
+          "path": "skills/untangle-codebase"
+        }
+      ],
+      "local_change": "agents/openai.yaml sets policy.allow_implicit_invocation false so Codex keeps it manual-only"
+    },
+    {
+      "name": "Theo Browne's tstack",
+      "source": "https://github.com/t3dotgg/tstack",
+      "pin": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+      "license": "MIT",
+      "skills": [
+        {
+          "name": "full-send",
+          "path": "skills/full-send"
+        },
+        {
+          "name": "full-stop",
+          "path": "skills/full-stop"
+        },
+        {
+          "name": "council",
+          "path": "skills/council"
+        },
+        {
+          "name": "sol-loop",
+          "path": "skills/sol-loop"
+        },
+        {
+          "name": "file-pr",
+          "path": "skills/file-pr"
+        },
+        {
+          "name": "takeover",
+          "path": "skills/takeover"
+        },
+        {
+          "name": "babysit-pr",
+          "path": "skills/babysit-pr"
+        },
+        {
+          "name": "modernize",
+          "path": "skills/modernize"
+        },
+        {
+          "name": "leaving-pr-comments",
+          "path": "skills/leaving-pr-comments"
+        }
+      ],
+      "personal_patches": [
+        "upstream/patches/personal/tstack-no-attribution.patch",
+        "upstream/patches/personal/tstack-council-opus-sol.patch"
+      ]
+    },
+    {
+      "name": "Playwright CLI skill",
+      "source": "npm:@playwright/cli",
+      "pin": "0.1.22",
+      "license": "Apache-2.0",
+      "skills": [
+        "playwright-cli"
+      ],
+      "install": "npm i -g @playwright/cli && playwright-cli install --skills=claude --global && playwright-cli install --skills=agents --global"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "pstack",
+      "marketplace": "cursor/plugins",
+      "id": "pstack@cursor-plugins",
+      "pin": "6b0300214a09fd6029cfb7077043125758cd1fd2",
+      "version": "0.15.36",
+      "license": "MIT",
+      "harness": "both",
+      "config": [
+        "router/claude-rules/pstack-models.md",
+        "router/codex/pstack-models.md"
+      ],
+      "codex": "built by scripts/build-pstack-codex.sh from the same pin; marketplace tinderbox-pstack, adapter upstream/pstack-codex/codex.md"
+    },
+    {
+      "name": "pr-review-toolkit",
+      "marketplace": "anthropics/claude-plugins-official",
+      "id": "pr-review-toolkit@claude-plugins-official",
+      "harness": "claude"
+    },
+    {
+      "name": "frontend-design",
+      "marketplace": "anthropics/claude-plugins-official",
+      "id": "frontend-design@claude-plugins-official",
+      "harness": "claude"
+    },
+    {
+      "name": "typescript-lsp",
+      "marketplace": "anthropics/claude-plugins-official",
+      "id": "typescript-lsp@claude-plugins-official",
+      "harness": "claude"
+    },
+    {
+      "name": "pyright-lsp",
+      "marketplace": "anthropics/claude-plugins-official",
+      "id": "pyright-lsp@claude-plugins-official",
+      "harness": "claude"
+    },
+    {
+      "name": "Context7 MCP",
+      "source": "npm:@upstash/context7-mcp",
+      "pin": "4.4.2",
+      "harness": "both",
+      "note": "stdio server, no API key"
+    }
+  ]
+}

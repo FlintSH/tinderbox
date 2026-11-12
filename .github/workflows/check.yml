@@ -1,0 +1,15 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/check.sh
+      - run: HOME="$RUNNER_TEMP/home" scripts/install.sh --skills --upstream
+      - run: scripts/build-pstack-codex.sh "$RUNNER_TEMP/pstack-codex"
+      - run: |
+          P="$RUNNER_TEMP/pstack-codex/plugins/pstack"
+          test -f "$P/docs/harness/codex.md"
+          test "$(grep -rl 'read \[the Codex adapter\]' "$P/skills" | wc -l)" -gt 0
+          test -f "$P/skills/poteto-mode/agents/openai.yaml"

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Untangle Codebase"
+  short_description: "Untangle a whole codebase in one refactoring pass"
+policy:
+  allow_implicit_invocation: false

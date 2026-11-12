@@ -1,0 +1,18 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Ja KooLit - Global rofi fonts */
+
+/* This is where you can change fonts and sizes */
+
+/* fl1nt brand: Terminus (TTF) is fl1nt.dev's --font-mono           */
+/* (installed in ~/.local/share/fonts/fl1nt-brand)                  */
+/* previous: JetBrainsMono Nerd Font SemiBold 15 / 13               */
+
+/*****-- Fonts Size and Font Size -----*****/
+configuration {
+  font: "Terminus (TTF) Medium 15";
+}
+
+/*****-- Elements Font Size -----*****/
+element-text {
+  font: "Terminus (TTF) Medium 13";
+}

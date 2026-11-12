@@ -1,0 +1,445 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Extra - Combined Modern - transparent */
+
+/* NOTE: This style is NOT vertical layout friendly! */
+
+@define-color white      	#F2F2F2;
+@define-color black      	#000000;
+@define-color text       	#FFFFFF;
+@define-color lightgray  	#686868;
+@define-color darkgray   	#353535;
+
+@define-color transparent	rgba(1, 1, 1, 0.5);
+@define-color teal-trans	rgba(1, 117, 84, 0.5);
+@define-color cyan			rgba(53, 140, 169, 1);
+
+/* fl1nt.dev authentic CSS colors */
+@define-color fl1nt-primary     #867cff;
+@define-color fl1nt-primary-dim #6b63cc;
+@define-color fl1nt-primary-bright #a499ff;
+@define-color fl1nt-secondary   #ff69b4;
+@define-color fl1nt-accent      #00ffff;
+@define-color fl1nt-success     #00ff41;
+@define-color fl1nt-warning     #ffaa00;
+@define-color fl1nt-error       #ff4444;
+@define-color fl1nt-bg-primary  #000000;
+@define-color fl1nt-bg-secondary rgba(0, 0, 0, 0.85);
+@define-color fl1nt-bg-tertiary rgba(0, 0, 0, 0.95);
+@define-color fl1nt-bg-overlay  rgba(134, 124, 255, 0.1);
+@define-color fl1nt-text-primary #ffffff;
+@define-color fl1nt-text-secondary #cfcfcf;
+@define-color fl1nt-text-dim    #999999;
+
+@define-color background-module     @fl1nt-bg-secondary;
+@define-color background-module2	@fl1nt-bg-overlay;
+@define-color border-color          @fl1nt-primary;
+@define-color button-color          @fl1nt-primary;
+@define-color button-hover          @fl1nt-primary-bright;
+
+@define-color backgroundlight @fl1nt-bg-overlay;
+@define-color backgrounddark @fl1nt-bg-primary;
+@define-color workspacesbackground1 @fl1nt-bg-overlay;
+@define-color workspacesbackground2 rgba(134, 124, 255, 0.2);
+@define-color bordercolor @fl1nt-primary;
+@define-color textcolor1 @fl1nt-text-primary;
+@define-color textcolor2 @fl1nt-text-secondary;
+@define-color textcolor3 @fl1nt-primary;
+@define-color iconcolor @fl1nt-text-primary;
+
+@import '../../.config/waybar/wallust/colors-waybar.css';
+@import "../waybar/style/catppuccin-themes/latte.css";
+
+* {
+    font-family: "Terminus (TTF)", "Space Mono", "JetBrainsMono Nerd Font", monospace;
+    font-weight: 400;
+	min-height: 0;  
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: transparent;
+    border-radius: 6px;
+	/* symmetric padding so left/right modules center on the same axis as the workspaces island */
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+tooltip {
+    background: @fl1nt-bg-primary;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @fl1nt-primary;
+    color: @fl1nt-text-primary;
+    box-shadow: 0 0 15px rgba(134, 124, 255, 0.4);
+    font-family: "Terminus (TTF)", "Space Mono", monospace;
+}
+
+#taskbar button,
+#workspaces button {
+    padding: 0px 3px;
+    margin: 3px 2px;
+    border-radius: 4px;
+    color: @textcolor1;
+    background-color: @workspacesbackground2;
+    transition: all 0.1s linear;
+    opacity: 0.4;
+}
+
+#taskbar button.active,
+#workspaces button.active {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 4px;
+    min-width: 30px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    opacity: 1.0;
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+    color: @fl1nt-text-primary;
+    background: @workspacesbackground2;
+    border-radius: 4px;
+    opacity:0.8;
+    box-shadow: 0 0 15px rgba(134, 124, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+#workspaces button.focused {
+    color: #d8dee9;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    border-radius: 10px;
+}
+
+/*-----module groups----*/
+.modules-left,
+.modules-right {
+    background-color: transparent;
+}
+
+.modules-right {
+    padding-right: 12px;
+}
+
+.modules-center {
+    background-color: @background-module;
+    border-radius: 8px;
+    border: 2px solid @fl1nt-primary;
+    box-shadow: 0 0 25px rgba(134, 124, 255, 0.3);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* was margin-top: 3px - asymmetric margin pushed the island off the bar's vertical center */
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#backlight,
+#backlight-slider,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state,
+#memory,
+#mode,
+#mpris,
+#network,
+#power-profiles-daemon,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar button,
+#taskbar,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-backlight,
+#custom-browser,
+#custom-cava_mviz,
+#custom-cycle_wall,
+#custom-dot_update,
+#custom-file_manager,
+#custom-keybinds,
+#custom-keyboard,
+#custom-light_dark,
+#custom-lock,
+#custom-hint,
+#custom-hypridle,
+#custom-menu,
+#custom-playerctl,
+#custom-power_vertical,
+#custom-power,
+#custom-quit,
+#custom-reboot,
+#custom-settings,
+#custom-spotify,
+#custom-swaync,
+#custom-tty,
+#custom-updater,
+#custom-hyprpicker,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default, 
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+    color: @fl1nt-text-secondary;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+#temperature.critical {
+    background-color: #ff0000;
+}
+
+@keyframes blink {
+    to {
+        color: #000000;
+    }
+}
+
+#custom-hint {
+	color: @fl1nt-text-secondary;
+	padding-right: 16px;
+	padding-left: 6px;
+}
+
+#pulseaudio.muted {
+    color: @fl1nt-error;
+    text-shadow: 0 0 4px @fl1nt-error;
+}
+
+#temperature.critical {
+    background-color: @red;
+}
+
+#battery.critical:not(.charging) {
+	color: @fl1nt-error;
+	animation-name: blink;
+	animation-duration: 3.0s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	text-shadow: 0 0 4px @fl1nt-error;
+}
+
+#pulseaudio-slider,
+#pulseaudio {
+	color: @foreground;
+}
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+	min-width: 80px;
+	min-height: 5px;
+	border-radius: 5px;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+	min-height: 10px;
+	border-radius: 5px;
+}
+
+#custom-hypridle,
+#custom-lock,
+#idle_inhibitor {
+    color: @fl1nt-text-secondary;
+}
+
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default, 
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+	color: @fl1nt-text-secondary;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+/*-----Indicators----*/
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+	color: @fl1nt-success;
+	text-shadow: 0 0 2px @fl1nt-success;
+}
+
+#clock {
+	color: @fl1nt-text-primary;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* #custom-updates styling lives at the bottom of this file (fl1nt block) */
+
+#custom-swaync{
+    color: @fl1nt-primary;
+    text-shadow: 0 0 2px @fl1nt-primary;
+}
+
+#custom-logo {
+    background-image: url("/home/flint/.config/waybar/fl1nt-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100px;
+    min-height: 30px;
+    padding: 2px;
+    margin: 0 4px;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+/* Power Profiles Daemon specific styling */
+#power-profiles-daemon {
+    color: @fl1nt-text-secondary;
+    transition: all 0.3s ease;
+}
+
+#power-profiles-daemon.performance {
+    color: @fl1nt-error;
+    text-shadow: 0 0 4px @fl1nt-error;
+}
+
+#power-profiles-daemon.balanced {
+    color: @fl1nt-primary;
+    text-shadow: 0 0 2px @fl1nt-primary;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @fl1nt-success;
+    text-shadow: 0 0 2px @fl1nt-success;
+}
+
+/* Recording Status Module */
+#custom-recording {
+    font-family: monospace;
+    margin: 0px 4px;
+    background: transparent;
+    border: none;
+}
+
+#custom-recording.recording-active {
+    color: #ff4444;
+    background: transparent;
+    border: none;
+    animation: recording-pulse 1s ease-in-out infinite;
+}
+
+@keyframes recording-pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#custom-recording.recording-inactive {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#custom-recording.recording-active {
+    color: #ff4444;
+    background: transparent;
+    border: none;
+    animation: recording-pulse 1s ease-in-out infinite;
+}
+
+@keyframes recording-pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#custom-recording.recording-inactive {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#custom-recording.uploading {
+    color: #44ff44;
+    background: transparent;
+    border: none;
+}
+
+#custom-recording.stopping {
+    color: #ffaa44;
+    background: transparent;
+    border: none;
+}
+
+/* ---- fl1nt: updates module (paru repo+AUR counter) ---- */
+/* Flat like its neighbors - no pill. On hover it expands and glows; */
+/* the tooltip carries "N updates available" (waybar can't swap label text on hover) */
+#custom-updates {
+    color: @fl1nt-text-secondary;
+    background: transparent;
+    border-radius: 6px;
+    padding: 0 6px;
+    margin: 0;
+    transition: all 0.25s ease;
+}
+
+#custom-updates.pending {
+    color: @fl1nt-primary-bright;
+}
+
+#custom-updates.pending:hover {
+    padding: 0 14px;
+    color: @fl1nt-text-primary;
+    background: @fl1nt-bg-overlay;
+    text-shadow: 0 0 6px @fl1nt-primary;
+}
+
+#custom-updates.updated {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    background: transparent;
+}

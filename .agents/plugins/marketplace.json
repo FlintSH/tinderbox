@@ -1,0 +1,6 @@
+{
+  "name": "tinderbox",
+  "plugins": [
+    {"name": "tinderbox", "source": {"source": "local", "path": "./plugins/tinderbox"}, "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"}, "category": "Developer Tools"}
+  ]
+}

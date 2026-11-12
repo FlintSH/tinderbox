@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+.playwright-cli/
+__pycache__/
+*.pyc
+node_modules/
+readme/.preview/

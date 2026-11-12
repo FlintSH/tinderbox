@@ -1,0 +1,4 @@
+interface:
+  display_name: "fl1nt.dev Design"
+  short_description: "Apply the verified fl1nt.dev brand and rice"
+  default_prompt: "Use $fl1nt-design to apply the fl1nt.dev design language to this project."

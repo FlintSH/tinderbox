@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/metadata') %>
+  </head>
+  <body class="crt">
+    <div class="crt-glow"></div>
+    <div id="crt" class="crt">
+      <%- include('partials/header') %>
+      <%- include('partials/nav', { currentPage: 'home' }) %>
+      <main class="content content-grid">
+        <div class="main-content-wrapper">
+          <section class="hero-section">
+            <div class="profile-card">
+            <div class="profile-visual">
+              <div class="image-container">
+                <img id="avatar" src="/images/avatarv3-og.png" alt="my avatar" />
+              </div>
+              <div class="profile-badges">
+                <span class="badge location">New York City, NY</span>
+                <span class="badge role">Software Engineer</span>
+                <span class="badge company">Scale AI</span>
+              </div>
+            </div>
+            <div class="profile-intro">
+              <h1 class="hero-title">
+                Hey, I'm 
+                <span class="name-switcher">
+                  <span class="name-labels">
+                    <span class="label username active">[ username ]</span>
+                    <span class="label realname">[ irl ]</span>
+                  </span>
+                  <span class="name-container">
+                    <span class="name username active">FlintSH</span>
+                    <span class="name realname">Zach</span>
+                  </span>
+                </span>
+              </h1>
+              <p class="hero-description">
+                I'm a self-taught programmer (obviously), optimist, and advocate for the democratization of the internet. Currently focused on advancing the data pipeline at Scale AI. I also maintain a few open source projects like Flare, Reve-SDK, and Disclone.
+              </p>
+       
+               <div class="hero-stats">
+                 <div class="stat-item">
+                   <span class="stat-number" id="totalVisits">0</span>
+                   <span class="stat-label">total visits</span>
+                 </div>
+                 <div class="stat-item">
+                   <span class="stat-number" id="uniqueVisits">0</span>
+                   <span class="stat-label">unique visitors</span>
+                 </div>
+                 <div class="stat-item">
+                   <span class="stat-number" id="currentVisits">0</span>
+                   <span class="stat-label">online now</span>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo-banner re-taped-banner">
+          <div class="banner-content">
+            <div class="banner-text">
+              <span class="banner-kicker">// Shoutout</span>
+              <h3>RE-TAPED</h3>
+              <p>My friend made a new platformer. It's actually good and worth your time, check it out NOW. <a class="banner-cta" href="https://store.steampowered.com/app/4192480/RETAPED/" target="_blank">Play on Steam NOW OR ELSE</a></p>
+            </div>
+            <div class="banner-visual">
+              <a href="https://store.steampowered.com/app/4192480/RETAPED/" target="_blank">
+                <div class="image-container">
+                  <img src="/images/re-taped-wordmark.png" alt="RE-TAPED game logo" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="section-card projects-section">
+          <div class="section-header">
+            <h2 class="section-title">// Projects</h2>
+            <div class="project-filter">
+              <div class="filter-badges">
+                <button class="filter-badge active" data-filter="all">All</button>
+                <button class="filter-badge" data-filter="owner">My Projects</button>
+                <button class="filter-badge" data-filter="contributor">Contributions</button>
+                <button class="filter-badge" data-filter="featured">Featured</button>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid" id="projectsGrid">
+            <% if (typeof repos !== 'undefined' && repos.length > 0) { %>
+              <% repos.forEach((repo, index) => { %>
+                <div class="project-card <%= repo.featured ? 'featured' : '' %> <%= index >= 6 ? 'hidden' : '' %>" data-tags="<%= repo.tags.join(' ') %>">
+                  <div class="card-header">
+                    <h3><%= repo.name %></h3>
+                    <div class="card-badges">
+                      <% 
+                        // Show multiple relevant tags
+                        const displayTags = [];
+                        
+                        // Add primary status tags
+                        if (repo.tags.includes('featured')) displayTags.push('FEATURED');
+                        
+                        // Add role tags (can coexist with status tags)
+                        if (repo.tags.includes('owner')) displayTags.push('OWNER');
+                        else if (repo.tags.includes('contributor')) displayTags.push('CONTRIBUTOR');
+                        
+                        displayTags.slice(0, 2).forEach(tag => { %>
+                          <span class="badge <%= tag.toLowerCase() %>"><%= tag %></span>
+                      <% }); %>
+                    </div>
+                  </div>
+                  
+                  <p class="card-description"><%= repo.description %></p>
+                  
+                  <div class="card-footer">
+                    <div class="card-meta">
+                      <% if (repo.language) { %>
+                        <span class="meta"><%= repo.language %></span>
+                      <% } %>
+                      <% if (repo.stars > 0) { %>
+                        <span class="meta">★ <%= repo.stars %></span>
+                      <% } %>
+                    </div>
+                    
+                    <div class="card-links">
+                      <% if (repo.isSpecial && repo.name === 'Paradigm') { %>
+                        <a href="<%= repo.url %>" target="_blank">Discord</a>
+                      <% } else { %>
+                        <a href="<%= repo.url %>" target="_blank">GitHub</a>
+                        <% if (repo.homepage) { %>
+                          <a href="<%= repo.homepage %>" target="_blank">Website</a>
+                        <% } %>
+                      <% } %>
+                    </div>
+                  </div>
+                </div>
+              <% }); %>
+            <% } else { %>
+              <!-- Fallback to hardcoded projects if API fails -->
+              <div class="project-card featured" data-status="active">
+                <div class="project-header">
+                  <h3>Flare</h3>
+                  <span class="project-status active">Active</span>
+                </div>
+                <p>A modern, lightning-fast file sharing platform built for self-hosting. Created with support for ShareX, Flameshot, and easy to set up.</p>
+                <div class="project-links">
+                  <a href="https://github.com/FlintSH/Flare/" target="_blank" class="project-link">GitHub</a>
+                </div>
+              </div>
+              <div class="project-card featured" data-status="active">
+                <div class="project-header">
+                  <h3>Paradigm</h3>
+                  <span class="project-status active">Active</span>
+                </div>
+                <p>A Discord bot originally created as a music bot after Rhythm shut down, but overtime gained a life of its own. Use it in my Discord!</p>
+                <div class="project-links">
+                  <a href="https://discord.gg/QaQ74W6Rm3" target="_blank" class="project-link">Discord</a>
+                </div>
+              </div>
+            <% } %>
+          </div>
+          <div class="projects-footer">
+            <button class="show-more-btn" id="showMoreProjects">
+              <span class="btn-text">Show 5 more projects</span>
+              <span class="btn-icon">↓</span>
+            </button>
+          </div>
+        </section>
+          <section class="section-card chat-section">
+            <h2 class="section-title">// Live Chat</h2>
+            <div class="chat-container">
+              <div id="chat-history" class="chat-messages"></div>
+              <div id="message-input" class="chat-input">
+                <input type="text" maxlength="143" placeholder="Enter message (be nice!)">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <%- include('partials/sidebar', { blogs: blogs, commits: commits }) %>
+      </main>
+      <aside class="hypersignal-entry" aria-label="Strange signal">
+        <a class="hypersignal-entry-link" href="/hypersignal">
+          <span class="hypersignal-entry-visual" aria-hidden="true">
+            <canvas id="hypersignal-entry-canvas"></canvas>
+            <span class="hypersignal-entry-screen"></span>
+          </span>
+          <span class="hypersignal-entry-mark" aria-hidden="true">?</span>
+        </a>
+      </aside>
+      <%- include('partials/footer') %>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const names = document.querySelectorAll('.name');
+        const labels = document.querySelectorAll('.name-labels .label');
+        let currentIndex = 0;
+        function switchName() {
+          names.forEach(name => name.classList.remove('active'));
+          labels.forEach(label => label.classList.remove('active'));
+          currentIndex = (currentIndex + 1) % names.length;
+          names[currentIndex].classList.add('active');
+          labels[currentIndex].classList.add('active');
+        }
+        setInterval(switchName, 3000);
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterBadges = document.querySelectorAll('.filter-badge');
+        const projectsGrid = document.getElementById('projectsGrid');
+        const projects = Array.from(projectsGrid.querySelectorAll('.project-card'));
+        const showMoreBtn = document.getElementById('showMoreProjects');
+        let currentFilter = 'all';
+        let isExpanded = false;
+        function updateShowMoreButton() {
+          const filteredProjects = projects.filter(p => {
+            const tags = p.getAttribute('data-tags').split(' ');
+            return currentFilter === 'all' || tags.includes(currentFilter);
+          });
+          const hiddenCount = filteredProjects.filter((p, i) => i >= 6).length;
+          if (hiddenCount > 0 && !isExpanded) {
+            showMoreBtn.style.display = 'inline-flex';
+            const btnText = showMoreBtn.querySelector('.btn-text');
+            btnText.textContent = `Show ${hiddenCount} more project${hiddenCount > 1 ? 's' : ''}`;
+          } else if (hiddenCount === 0) {
+            showMoreBtn.style.display = 'none';
+          }
+        }
+        updateShowMoreButton();
+        filterBadges.forEach(badge => {
+          badge.addEventListener('click', function() {
+            currentFilter = this.getAttribute('data-filter');
+            filterBadges.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            isExpanded = false;
+            showMoreBtn.classList.remove('expanded');
+            let visibleCount = 0;
+            projects.forEach(project => {
+              const projectTags = project.getAttribute('data-tags').split(' ');
+              const shouldShow = currentFilter === 'all' || projectTags.includes(currentFilter);
+              
+              // Reset display first
+              project.style.display = 'none';
+              project.classList.add('hidden');
+              
+              if (shouldShow && visibleCount < 6) {
+                project.style.display = 'flex';
+                project.classList.remove('hidden');
+                project.style.animation = 'fadeInUp 0.3s ease forwards';
+                visibleCount++;
+              } else if (shouldShow && isExpanded) {
+                project.style.display = 'flex';
+                project.classList.remove('hidden');
+              }
+            });
+            updateShowMoreButton();
+          });
+        });
+        if (showMoreBtn) {
+          showMoreBtn.addEventListener('click', function() {
+            isExpanded = !isExpanded;
+            const filteredProjects = projects.filter(p => {
+              const tags = p.getAttribute('data-tags').split(' ');
+              return currentFilter === 'all' || tags.includes(currentFilter);
+            });
+            filteredProjects.forEach((project, index) => {
+              if (index >= 6) {
+                if (isExpanded) {
+                  project.style.display = 'flex';
+                  project.classList.remove('hidden');
+                  project.style.animation = 'fadeInUp 0.3s ease forwards';
+                } else {
+                  project.style.display = 'none';
+                  project.classList.add('hidden');
+                }
+              }
+            });
+            const btnText = showMoreBtn.querySelector('.btn-text');
+            if (isExpanded) {
+              btnText.textContent = 'Show less';
+              showMoreBtn.classList.add('expanded');
+            } else {
+              updateShowMoreButton();
+              showMoreBtn.classList.remove('expanded');
+            }
+          });
+        }
+      });
+      function copyButtonCode() {
+        const copyButton = document.querySelector('.copy-button');
+        const buttonCode = '<a href="https://fl1nt.dev"><img src="https://fl1nt.dev/images/mybutton.gif"></a>';
+        try {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(buttonCode).then(() => {
+              const originalText = copyButton.textContent;
+              copyButton.textContent = 'Copied!';
+              copyButton.style.background = 'var(--success)';
+              setTimeout(() => {
+                copyButton.textContent = originalText;
+                copyButton.style.background = 'var(--primary)';
+              }, 2000);
+            }).catch(err => {
+              console.error('Failed to copy text: ', err);
+              fallbackCopy();
+            });
+          } else {
+            fallbackCopy();
+          }
+        } catch (err) {
+          console.error('Failed to copy text: ', err);
+          fallbackCopy();
+        }
+        function fallbackCopy() {
+          const textArea = document.createElement('textarea');
+          textArea.value = buttonCode;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-999999px';
+          textArea.style.top = '-999999px';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            document.execCommand('copy');
+            const originalText = copyButton.textContent;
+            copyButton.textContent = 'Copied!';
+            copyButton.style.background = 'var(--success)';
+            setTimeout(() => {
+              copyButton.textContent = originalText;
+              copyButton.style.background = 'var(--primary)';
+            }, 2000);
+          } catch (err) {
+            copyButton.textContent = 'Failed';
+            setTimeout(() => {
+              copyButton.textContent = 'Copy Code';
+            }, 2000);
+          } finally {
+            document.body.removeChild(textArea);
+          }
+        }
+      }
+    </script>
+    <%- include('partials/scripts') %>
+    <script src="/scripts/hypersignal.min.js?v=<%= hypersignalJsVersion %>"></script>
+  </body>
+</html> 

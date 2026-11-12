@@ -1,0 +1,278 @@
+{
+  "name_id_key": {
+    "0": "copyright",
+    "1": "family",
+    "2": "subfamily",
+    "5": "version",
+    "6": "postscript",
+    "8": "manufacturer",
+    "9": "designer",
+    "11": "vendor_url",
+    "13": "license",
+    "14": "license_url"
+  },
+  "fonts": {
+    "Handjet-Variable.ttf": {
+      "0": [
+        "Copyright 2018 The Handjet Project Authors (https://github.com/rosettatype/Handjet/)"
+      ],
+      "1": [
+        "Handjet"
+      ],
+      "2": [
+        "Regular"
+      ],
+      "5": [
+        "Version 2.003"
+      ],
+      "6": [
+        "Handjet-Regular"
+      ],
+      "8": [
+        "Rosetta Type Foundry"
+      ],
+      "9": [
+        "David Brezina"
+      ],
+      "11": [
+        "https://rosettatype.com"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "SpaceMono-Bold.ttf": {
+      "0": [
+        "Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)"
+      ],
+      "1": [
+        "Space Mono"
+      ],
+      "2": [
+        "Bold"
+      ],
+      "5": [
+        "Version 1.003; ttfautohint (v1.8.4.7-5d5b)"
+      ],
+      "6": [
+        "SpaceMono-Bold"
+      ],
+      "8": [
+        "Colophon Foundry & Benjamin Critton"
+      ],
+      "9": [
+        "Colophon Foundry + Benjamin Critton"
+      ],
+      "11": [
+        "http://www.colophon-foundry.org"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "SpaceMono-BoldItalic.ttf": {
+      "0": [
+        "Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)"
+      ],
+      "1": [
+        "Space Mono"
+      ],
+      "2": [
+        "Bold Italic"
+      ],
+      "5": [
+        "Version 1.003; ttfautohint (v1.8.4.7-5d5b)"
+      ],
+      "6": [
+        "SpaceMono-BoldItalic"
+      ],
+      "8": [
+        "Colophon Foundry & Benjamin Critton"
+      ],
+      "9": [
+        "Colophon Foundry + Benjamin Critton"
+      ],
+      "11": [
+        "http://www.colophon-foundry.org"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "SpaceMono-Italic.ttf": {
+      "0": [
+        "Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)"
+      ],
+      "1": [
+        "Space Mono"
+      ],
+      "2": [
+        "Italic"
+      ],
+      "5": [
+        "Version 1.003; ttfautohint (v1.8.4.7-5d5b)"
+      ],
+      "6": [
+        "SpaceMono-Italic"
+      ],
+      "8": [
+        "Colophon Foundry & Benjamin Critton"
+      ],
+      "9": [
+        "Colophon Foundry + Benjamin Critton"
+      ],
+      "11": [
+        "http://www.colophon-foundry.org"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "SpaceMono-Regular.ttf": {
+      "0": [
+        "Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)"
+      ],
+      "1": [
+        "Space Mono"
+      ],
+      "2": [
+        "Regular"
+      ],
+      "5": [
+        "Version 1.003; ttfautohint (v1.8.4.7-5d5b)"
+      ],
+      "6": [
+        "SpaceMono-Regular"
+      ],
+      "8": [
+        "Colophon Foundry & Benjamin Critton"
+      ],
+      "9": [
+        "Colophon Foundry + Benjamin Critton"
+      ],
+      "11": [
+        "http://www.colophon-foundry.org"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "TerminusTTF-4.49.3.ttf": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus (TTF)"
+      ],
+      "2": [
+        "Medium"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF"
+      ]
+    },
+    "TerminusTTF-Bold-4.49.3.ttf": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus (TTF)"
+      ],
+      "2": [
+        "Bold"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF-Bold"
+      ]
+    },
+    "TerminusTTF-Bold-Italic-4.49.3.ttf": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus (TTF)"
+      ],
+      "2": [
+        "Bold-Italic"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF-Bold-Italic"
+      ]
+    },
+    "TerminusTTF-Italic-4.49.3.ttf": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus (TTF)"
+      ],
+      "2": [
+        "Italic"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF-Italic"
+      ]
+    },
+    "terminusttf-4.49.3-webfont.woff": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus TTF)"
+      ],
+      "2": [
+        "Medium"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF"
+      ]
+    },
+    "terminusttf-4.49.3-webfont.woff2": {
+      "0": [
+        "Copyright (C) 2020 Dimitar Toshkov Zhekov; Copyright (C) 2023 Tilman Blumenbach; Licensed under the SIL Open Font License, Version 1.1"
+      ],
+      "1": [
+        "Terminus TTF)"
+      ],
+      "2": [
+        "Medium"
+      ],
+      "5": [
+        "Version 4.49.3"
+      ],
+      "6": [
+        "TerminusTTF"
+      ]
+    }
+  }
+}

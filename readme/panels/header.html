@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- README header, after assets/banner.html. Animated: render.mjs captures one frame per blue-bg.gif frame. -->
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="panel.css">
+<style>
+#shot { padding: 28px 20px; }
+.panel { position: relative; display: grid; grid-template-columns: 1fr 176px; overflow: hidden;
+  background: var(--bg-secondary); border: var(--border-width) solid var(--primary); border-radius: var(--border-radius);
+  box-shadow: 0 0 24px rgba(134, 124, 255, .35); }
+.main { padding: var(--spacing-lg) var(--spacing-xl); display: flex; flex-direction: column; gap: var(--spacing-sm); }
+.label { font-size: 13px; }
+.label b { color: var(--primary); font-weight: normal; }
+.label span { text-transform: none; letter-spacing: 0; color: var(--primary-dim); }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: 104px; line-height: .9; margin: 0; color: var(--primary-bright); letter-spacing: .02em; }
+.sub { color: var(--text-secondary); font-size: 16px; line-height: 1.5; max-width: 54ch; }
+.readout { margin-top: var(--spacing-md); display: flex; flex-wrap: wrap; gap: var(--spacing-xs) var(--spacing-lg); font-size: 13px;
+  border-top: 1px solid var(--primary-dim); padding-top: var(--spacing-sm); color: var(--text-dim); }
+.readout em { font-style: normal; color: var(--text-primary); }
+.readout .a { color: var(--accent); } .readout .s { color: var(--secondary); } .readout .g { color: var(--success); }
+.side { border-left: 1px solid var(--primary-dim); background: var(--bg-overlay); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: var(--spacing-md); }
+.avatar { width: 120px; height: 120px; image-rendering: pixelated; border: var(--border-width) solid var(--primary); border-radius: var(--border-radius-small); }
+.logo { width: 140px; height: 30px; image-rendering: pixelated; }
+</style></head>
+<body>
+<div id="shot">
+  <div class="bg"><canvas></canvas></div>
+  <div class="panel">
+    <div class="main">
+      <div class="label"><b>//</b> agent toolkit <span>&nbsp;~/FlintSH/tinderbox</span></div>
+      <h1>tinderbox</h1>
+      <div class="sub" data-copy="tagline"></div>
+      <div class="readout">
+        <span>[skills] <em class="s" data-fact="counts.total"></em></span>
+        <span>[for] <em>claude code · codex</em></span>
+        <span>[autosync] <em class="g">every 10 min</em></span>
+      </div>
+    </div>
+    <div class="side">
+      <img class="avatar" src="../../skills/fl1nt-design/assets/images/avatarv3-og.png" alt="">
+      <img class="logo" src="../../skills/fl1nt-design/assets/images/logo.png" alt="FlintSH">
+    </div>
+  </div>
+</div>
+<script src="panel.js"></script>
+</body></html>

@@ -1,0 +1,49 @@
+tinderbox
+Copyright (c) 2026 FlintSH
+
+Unless a file or folder below says otherwise, everything in this repository is
+licensed under the Mozilla Public License 2.0. See LICENSE.
+
+Not covered by the MPL
+----------------------
+
+Identity assets and site artwork. These are not licensed under the MPL or any
+other license. They belong to FlintSH or to their respective owners, and are
+here so the fl1nt-design skill and the README can show the real thing:
+
+  skills/fl1nt-design/assets/images/        avatar, FlintSH wordmark, pixel
+                                            backgrounds, cursors and other site
+                                            art
+  skills/fl1nt-design/references/screenshots/
+  skills/fl1nt-design/references/source/    snapshots of fl1nt.dev and my
+                                            desktop configuration
+  assets/readme/header.gif                  shows the avatar, wordmark and
+                                            background
+
+Fonts. Each keeps its own license:
+
+  skills/fl1nt-design/assets/fonts/         Terminus (TTF), Space Mono and
+                                            Handjet, SIL Open Font License 1.1
+                                            (OFL-*.txt next to the files)
+  assets/readme/flow-dark.svg,              embed the Terminus (TTF) web font,
+  assets/readme/flow-light.svg              SIL Open Font License 1.1
+                                            (skills/fl1nt-design/assets/fonts/
+                                            OFL-Terminus.txt)
+
+Third-party work
+----------------
+
+upstream/patches/ modifies tstack by Theo Browne
+(https://github.com/t3dotgg/tstack). Upstream text in those patches stays
+under tstack's MIT license, included as upstream/patches/LICENSE-tstack.
+
+upstream/pstack-codex/codex.md draws on pstack-claude by Michael Denyer, with Lauren Tan
+(https://github.com/michael-denyer/pstack-claude), MIT licensed. Its license
+text is included as upstream/pstack-codex/LICENSE-pstack-claude.
+
+upstream/overlays/untangle-codebase/ is laid over untangle-codebase
+(https://github.com/caldoai/skills) and keeps that project's license, included
+there.
+
+Everything listed in upstream/sources.json is pinned, not copied, and is
+installed from its own source under its own license.

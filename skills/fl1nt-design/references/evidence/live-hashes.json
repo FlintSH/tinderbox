@@ -1,0 +1,68 @@
+[
+  {
+    "url": "https://fl1nt.dev/css/style-new.min.css",
+    "live_sha256": "3650a754e3756d5a8dce2c2b5a636aefb0cd8eef6691d4afa23eff606020dccc",
+    "local_sha256": "3650a754e3756d5a8dce2c2b5a636aefb0cd8eef6691d4afa23eff606020dccc",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/css/crt.min.css",
+    "live_sha256": "65f747162ec2d81c3d9ef4cf5287103a64f4797d516d837d7d676c9fd13050b3",
+    "local_sha256": "65f747162ec2d81c3d9ef4cf5287103a64f4797d516d837d7d676c9fd13050b3",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/css/origins.min.css",
+    "live_sha256": "f7a76e1bbfcd3c7b3aafa41aab74748a5d6b0061db3241a2c56ff6e3484cf08b",
+    "local_sha256": "f7a76e1bbfcd3c7b3aafa41aab74748a5d6b0061db3241a2c56ff6e3484cf08b",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/css/hypersignal.min.css",
+    "live_sha256": "991c77e57acfa9c2379edccd1aed6d60c25a1dfb38a16dde3d1f475a85e32a9c",
+    "local_sha256": "991c77e57acfa9c2379edccd1aed6d60c25a1dfb38a16dde3d1f475a85e32a9c",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/logo.png",
+    "live_sha256": "e4b7993954bff4d6cdceaa1d720010a02141cbeed46141736dc316cedb79df1d",
+    "local_sha256": "e4b7993954bff4d6cdceaa1d720010a02141cbeed46141736dc316cedb79df1d",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/avatarv3-og.png",
+    "live_sha256": "bd48f0004e495dcd18019605e7c87f432bbaef7e2f630eba10fdc26828811eb6",
+    "local_sha256": "bd48f0004e495dcd18019605e7c87f432bbaef7e2f630eba10fdc26828811eb6",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/blue-bg.gif",
+    "live_sha256": "863a27bdb644ca03a9b0f720bd1deea0dab04ce2241d12ec427229a27d2f01b5",
+    "local_sha256": "863a27bdb644ca03a9b0f720bd1deea0dab04ce2241d12ec427229a27d2f01b5",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/mybutton.gif",
+    "live_sha256": "086c3d9fd7cc3123aac6ab6058792bd752fe84592ac7bcdcfcf8f36a9baf6b1c",
+    "local_sha256": "086c3d9fd7cc3123aac6ab6058792bd752fe84592ac7bcdcfcf8f36a9baf6b1c",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/enderman.gif",
+    "live_sha256": "0bf13581567057ec048b3b7b2e07bee05179a55c9ca0ad911215fff97b717970",
+    "local_sha256": "0bf13581567057ec048b3b7b2e07bee05179a55c9ca0ad911215fff97b717970",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/images/favicon.ico",
+    "live_sha256": "19fe9170fdbffb8f01227bed3b5ca88f095ce119e37a12a9d45f9a3674df72dd",
+    "local_sha256": "19fe9170fdbffb8f01227bed3b5ca88f095ce119e37a12a9d45f9a3674df72dd",
+    "equal": true
+  },
+  {
+    "url": "https://fl1nt.dev/fonts/terminusttf-4.49.3-webfont.woff2",
+    "live_sha256": "90261dfbff3cf25a6ba13d59bc6265533f581e8063976e46d5dfdad08f4aa220",
+    "local_sha256": "90261dfbff3cf25a6ba13d59bc6265533f581e8063976e46d5dfdad08f4aa220",
+    "equal": true
+  }
+]

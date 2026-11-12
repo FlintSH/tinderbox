@@ -1,0 +1,6 @@
+rofi -dump-config -config ~/.config/rofi/config.rasi
+	font: "Fira Code SemiBold 12";
+fc-match Fira Code:style=SemiBold
+NotoSans-Regular.ttf: "Noto Sans" "Regular"
+fc-match Terminus (TTF):style=Medium
+TerminusTTF-4.49.3.ttf: "Terminus (TTF)" "Medium"

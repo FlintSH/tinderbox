@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>origins</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/css/origins.min.css">
+</head>
+<body>
+
+  <!-- Audio prompt overlay -->
+  <div class="audio-prompt" id="audio-prompt">
+    <span class="audio-prompt-text">[ click to enter ]</span>
+    <span class="audio-prompt-sub">audio will play</span>
+  </div>
+
+  <!-- Background visualizer -->
+  <canvas id="visualizer-canvas"></canvas>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Glitch transition overlay -->
+  <div class="glitch-overlay" id="glitch-overlay"></div>
+
+  <!-- Audio element -->
+  <audio id="keygen-audio" loop preload="auto">
+    <source src="/sounds/keygen.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HUD -->
+  <div class="origins-hud">
+    <div class="hud-left">
+      <a href="/" class="exit-link">[ESC] EXIT</a>
+    </div>
+    <div class="hud-right">
+      <span class="chapter-indicator" id="chapter-indicator">[1/7]</span>
+      <button class="mute-btn" id="mute-btn">[MUTE]</button>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="origins-container">
+
+    <!-- ======== INTRO ======== -->
+    <div class="chapter ch-intro" data-chapter="0">
+      <div class="chapter-inner">
+        <pre class="ascii-header stagger-1">
+ ██████╗ ██████╗ ██╗ ██████╗ ██╗███╗   ██╗███████╗
+██╔═══██╗██╔══██╗██║██╔════╝ ██║████╗  ██║██╔════╝
+██║   ██║██████╔╝██║██║  ███╗██║██╔██╗ ██║███████╗
+██║   ██║██╔══██╗██║██║   ██║██║██║╚██╗██║╚════██║
+╚██████╔╝██║  ██║██║╚██████╔╝██║██║ ╚████║███████║
+ ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝
+        </pre>
+
+        <p class="intro-big stagger-2">Not every programmer gets<br>their start from a textbook.</p>
+
+        <div class="intro-divider stagger-3">───────────</div>
+
+        <p class="intro-sub stagger-4">
+          This is a tribute to my beginnings. I got my start <br>
+          from very unconventional means.
+        </p>
+
+        <div class="continue-prompt stagger-5">
+          <span class="continue-text">[ press any key to continue ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== THE BEGINNING ======== -->
+    <div class="chapter" data-chapter="1">
+      <div class="chapter-inner story-section">
+
+        <p class="pull-quote stagger-1">
+          I originally got glued to a computer after going to
+          my dad's work as a kid.
+        </p>
+
+        <div class="story-text stagger-2">
+          <p>
+            He was an IT guy. He'd go out to hospitals to configure
+            their software, run scripts, install systems, all of that.
+            I just thought it was the coolest thing ever.
+          </p>
+          <p>
+            When I got my own PC I was big into gaming, and I guess I
+            didn't mind sipping the koolaid because it didn't take long
+            before I ended up tinkering with shit I shouldn't have.
+          </p>
+          <p>
+            I got into forums like <span class="highlight">HackForums</span>,
+            <span class="highlight">V3rmillion</span>, and
+            <span class="highlight">RaidForums</span>. I went by
+            <span class="highlight">Eggn0g</span> and later
+            <span class="highlight">FADED</span>. Yeah... I know lol. Keep in mind I was 11-14 years old at the time. 💀
+          </p>
+          <p>
+            I'm not proud of it, but I'm grateful for it. It taught me so much about my curiosity in tech and programming.
+          </p>
+        </div>
+
+        <div class="continue-prompt stagger-3">
+          <span class="continue-text">[ continue → ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== THE COMMUNITY ======== -->
+    <div class="chapter" data-chapter="2">
+      <div class="chapter-inner story-section">
+
+        <p class="pull-quote stagger-1">
+          These forums were raw and real. You really saw people for who they were.
+        </p>
+
+        <div class="story-text stagger-2">
+          <p>
+            I was on these forums pretty much all hours of the day when
+            I wasn't at school. I'd come home, hop on the PC, and just
+            be in it until I passed out. On top of the forum stuff I was
+            running game servers on the side too. Always had something going.
+          </p>
+          <p>
+            My parents kinda knew but not really. I think they saw me
+            on the computer a lot and figured it was just games. They
+            didn't know the half of it lol.
+          </p>
+          <p>
+            The community is hard to describe to someone who wasn't
+            there. Despite so many bad things happening on these forums,
+            the people were genuinely beautiful. It sounds weird to say
+            that about a place where people were cracking accounts and
+            selling RATs, but it's true. You really saw people for who
+            they were. There was no pretending.
+          </p>
+          <p>
+            I looked up to a lot of people and built quite a reputation
+            myself. A lot of the friends I made during these days I
+            still carry with me today. We grew up together on those
+            forums. Some of my closest friendships started in a
+            DM at 2 AM.
+          </p>
+        </div>
+
+        <div class="continue-prompt stagger-3">
+          <span class="continue-text">[ continue → ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== THE HUSTLE ======== -->
+    <div class="chapter" data-chapter="3">
+      <div class="chapter-inner story-section">
+
+        <p class="pull-quote stagger-1">
+          I was always hustling and building shit from a young age.
+        </p>
+
+        <div class="story-text stagger-2">
+          <p>
+            Cracking accounts, selling them, RATing, mining crypto
+            on infected hosts, you name it. If there was a way to
+            make money on those forums, I was probably doing it or
+            trying to figure it out.
+          </p>
+        </div>
+
+        <div class="activity-grid stagger-3">
+          <div class="activity">cracking</div>
+          <div class="activity">bruteforce</div>
+          <div class="activity">RATting</div>
+          <div class="activity">crypto</div>
+          <div class="activity">obfuscation</div>
+        </div>
+
+        <div class="story-text stagger-4">
+          <p>
+            It was definitely a wild and questionable time, and it's not the kind of thing I'd condone these days. But honestly, I was <em>always</em> doing something. Always building, always scheming, always learning.
+          </p>
+        </div>
+
+        <div class="continue-prompt stagger-5">
+          <span class="continue-text">[ continue → ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== BUILDING REAL THINGS ======== -->
+    <div class="chapter" data-chapter="4">
+      <div class="chapter-inner story-section">
+
+        <p class="pull-quote stagger-1">
+          At some point, it stopped being just skidding around.
+        </p>
+
+        <div class="story-text stagger-2">
+          <p>
+            Naturally, all of this led to me getting my first real
+            footing in programming. I started building my own tools
+            from scratch. The first thing I really dug into was making
+            bruteforce and cracking tools, including a Spotify account
+            checker that ended up being faster than anything else out
+            there at the time.
+          </p>
+        </div>
+
+        <div class="divider stagger-2">───</div>
+
+        <div class="inline-row stagger-3">
+          <div class="keygen-window">
+            <div class="keygen-titlebar">
+              <span class="keygen-titlebar-text">SpotifyChecker_v3.1.exe</span>
+              <div class="keygen-titlebar-btns">
+                <span class="keygen-btn-min">─</span>
+                <span class="keygen-btn-max">□</span>
+                <span class="keygen-btn-close">✕</span>
+              </div>
+            </div>
+            <div class="keygen-body">
+              <div class="keygen-group" data-label="Checker">
+                <div class="keygen-field">
+                  <label>Combo:</label>
+                  <div class="keygen-input">combos_10k.txt</div>
+                </div>
+                <div class="keygen-field">
+                  <label>Hits:</label>
+                  <div class="keygen-input keygen-output" id="keygen-key">0</div>
+                </div>
+                <button class="keygen-generate-btn" id="keygen-gen-btn">[ START CHECK ]</button>
+              </div>
+              <div class="keygen-status">
+                <span class="keygen-status-text">STATUS: Ready.</span>
+              </div>
+            </div>
+          </div>
+          <div class="side-note">
+            <p>
+              When I was 14, among a ton of other projects, I ran
+              <span class="highlight">ezSpotify.co</span>, a Spotify
+              upgrade service where I would invite users to premium
+              family plans from hijacked accounts.
+            </p>
+            <p>
+              It started as a totally manual process. Someone would pay
+              me $5 and I'd manually send an invite to their account.
+              But the demand got crazy, so I had to automate it.
+            </p>
+          </div>
+        </div>
+
+        <div class="story-text stagger-4">
+          <p>
+            I built a Selenium automation connected to a Flask page.
+            User would buy, get a license key, put the key in the site
+            along with their email and country, and the Selenium bot
+            would go to Spotify, log into one of the cracked accounts,
+            and invite them automatically. The whole thing was
+            self-service. At 14 lol.
+          </p>
+          <p>
+            Am I bragging? No. But it's to show that I always have
+            had a knack for finding new endeavors.
+          </p>
+        </div>
+
+        <div class="continue-prompt stagger-5">
+          <span class="continue-text">[ continue → ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== GROWING UP ======== -->
+    <div class="chapter" data-chapter="5">
+      <div class="chapter-inner story-section">
+
+        <p class="pull-quote stagger-1">
+          Despite everything, I'm grateful for the footing I gained.
+        </p>
+
+        <div class="story-text stagger-2">
+          <p>
+            The transition to going legit was honestly just a natural
+            thing as I got older. The Spotify thing grew really big and
+            I started worrying about real implications. As I started
+            getting real jobs, I just didn't find a need to do shady
+            things to get by anymore.
+          </p>
+          <p>
+            At the time I didn't think I was gaining any real skills.
+            I was just some kid on forums doing dumb stuff. But
+            everything I ended up learning about how the internet works,
+            about networking, about building tools that actually do
+            things, it all started there. All of it.
+          </p>
+          <p>
+            The spirit of those skid forums still lives in me to this
+            day. It was a big part of my childhood and I wouldn't
+            trade it.
+          </p>
+        </div>
+
+        <div class="continue-prompt stagger-3">
+          <span class="continue-text">[ continue → ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== END ======== -->
+    <div class="chapter ch-clean" data-chapter="6">
+      <div class="chapter-inner clean-inner">
+
+        <div class="clean-text stagger-1">
+          This page is a homage to such formative days.
+        </div>
+
+        <div class="clean-spacer stagger-2"></div>
+
+        <p class="music-note clean-note stagger-3">
+          The music you're hearing is from a MalwareBytes keygen I used to use to generate keys and resell back in the day. <br><br>
+          Always thought the music on it was badass. Took me ages to find it again.
+        </p>
+
+        <div class="clean-spacer stagger-4"></div>
+
+        <a href="/" class="clean-home-link stagger-5">return home</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/scripts/origins.min.js"></script>
+</body>
+</html>

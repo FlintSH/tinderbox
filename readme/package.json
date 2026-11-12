@@ -1,0 +1,15 @@
+{
+  "name": "tinderbox-readme",
+  "private": true,
+  "type": "module",
+  "description": "Renders the README header, flow diagram and README.md; previews it as GitHub shows it.",
+  "scripts": {
+    "render": "node render.mjs",
+    "preview": "node preview.mjs"
+  },
+  "devDependencies": {
+    "gifenc": "1.0.3",
+    "playwright-core": "1.56.1",
+    "pngjs": "7.0.0"
+  }
+}

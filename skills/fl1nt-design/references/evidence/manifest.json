@@ -1,0 +1,722 @@
+{
+  "captured": "2026-09-20",
+  "files": [
+    {
+      "file": "references/source/web/style-new.css",
+      "original": "/home/flint/Development/web/src/css/style-new.css",
+      "kind": "source",
+      "sha256": "47560c3a8a88923e335fb8f461fa960a40029b75335ffe7b6b81c6df336c3e78",
+      "public_url": "https://fl1nt.dev/css/style-new.min.css"
+    },
+    {
+      "file": "references/source/web/crt.css",
+      "original": "/home/flint/Development/web/src/css/crt.css",
+      "kind": "source",
+      "sha256": "4f77474588b7ed437cc2f1b269e00194566325814741802949bbc6f9f255ac21",
+      "public_url": "https://fl1nt.dev/css/crt.min.css"
+    },
+    {
+      "file": "references/source/web/origins.css",
+      "original": "/home/flint/Development/web/src/css/origins.css",
+      "kind": "source",
+      "sha256": "af23aa923c6a275b611db419b2eae861cdb454fac3ad1e3839849b0a6abc0784",
+      "public_url": "https://fl1nt.dev/css/origins.min.css"
+    },
+    {
+      "file": "references/source/web/hypersignal.css",
+      "original": "/home/flint/Development/web/src/css/hypersignal.css",
+      "kind": "source",
+      "sha256": "37a5a7347ad918a1280753baf61e235f61eb1c4e6588ad8ece4a07997a91b76e",
+      "public_url": "https://fl1nt.dev/css/hypersignal.min.css"
+    },
+    {
+      "file": "references/source/web/index.ejs",
+      "original": "/home/flint/Development/web/views/index.ejs",
+      "kind": "source",
+      "sha256": "9c46fcb502a3226763568e4cb74ca20983b249be494ca31897f3d71dc828ab40"
+    },
+    {
+      "file": "references/source/web/about.ejs",
+      "original": "/home/flint/Development/web/views/about.ejs",
+      "kind": "source",
+      "sha256": "cf35649e43a8901048139398404de5ded86466e721b59771131678072372fffa"
+    },
+    {
+      "file": "references/source/web/blog.ejs",
+      "original": "/home/flint/Development/web/views/blog.ejs",
+      "kind": "source",
+      "sha256": "bca89c02220c7d3362f51de7bd4cc4b813eaf0e348d3b77008118b4ad884b424"
+    },
+    {
+      "file": "references/source/web/post.ejs",
+      "original": "/home/flint/Development/web/views/post.ejs",
+      "kind": "source",
+      "sha256": "0bb0b42c69afb89b1007c5ef5b6cc59af43cf045671628e615a804963e51875b"
+    },
+    {
+      "file": "references/source/web/guestbook.ejs",
+      "original": "/home/flint/Development/web/views/guestbook.ejs",
+      "kind": "source",
+      "sha256": "32a3e1cfbff5a03660403da76e080ec565d452e4c228b89119d79e7502b1adc7"
+    },
+    {
+      "file": "references/source/web/journal.ejs",
+      "original": "/home/flint/Development/web/views/journal.ejs",
+      "kind": "source",
+      "sha256": "7ce499162553dc500b8185ded430c9fe74778ef31e11f83ae824acbf9150aeb6"
+    },
+    {
+      "file": "references/source/web/origins.ejs",
+      "original": "/home/flint/Development/web/views/origins.ejs",
+      "kind": "source",
+      "sha256": "87c9ad32611fde00956f0d045b5ea53fe997c7caf9e10cf73cf57c6e44a6ab24"
+    },
+    {
+      "file": "references/source/web/hypersignal.ejs",
+      "original": "/home/flint/Development/web/views/hypersignal.ejs",
+      "kind": "source",
+      "sha256": "bc6e5cb8ebef9fc3499c8cffbdcc89c85441747b17afc8525eab2cd8c98d7cd7"
+    },
+    {
+      "file": "references/source/web/partials/header.ejs",
+      "original": "/home/flint/Development/web/views/partials/header.ejs",
+      "kind": "source",
+      "sha256": "b98a8cc0b8009719d95770c63aa23e889ce33f59ac1aa5bc7c96cccc1bf5e94c"
+    },
+    {
+      "file": "references/source/web/partials/nav.ejs",
+      "original": "/home/flint/Development/web/views/partials/nav.ejs",
+      "kind": "source",
+      "sha256": "419fa65a404dadf82bc07f34ad73595a88f0f249884f48b7f807b64c54017d68"
+    },
+    {
+      "file": "references/source/web/partials/footer.ejs",
+      "original": "/home/flint/Development/web/views/partials/footer.ejs",
+      "kind": "source",
+      "sha256": "94b6b6e89602ceb4559fb6b1cd7c6acbfd3d1db26e6e452d99091885be278ff0"
+    },
+    {
+      "file": "references/source/web/partials/metadata.ejs",
+      "original": "/home/flint/Development/web/views/partials/metadata.ejs",
+      "kind": "source",
+      "sha256": "c27d9d879526ac89e927560d80275cc400b2252627e77dd8d013b674238438c2"
+    },
+    {
+      "file": "references/source/web/partials/sidebar.ejs",
+      "original": "/home/flint/Development/web/views/partials/sidebar.ejs",
+      "kind": "source",
+      "sha256": "e2609a8dbce3c8f82c440cad2bf8b31e2ef4232c148ca8cae061957217473988"
+    },
+    {
+      "file": "references/source/rice/hypr/hyprland.lua",
+      "original": "/home/flint/.config/hypr/hyprland.lua",
+      "kind": "source",
+      "sha256": "10248b8ae54f3b8e4ca8f9953cbda52f0aa2d41dd1b91cc4247a1bf6e3eff519"
+    },
+    {
+      "file": "references/source/rice/hypr/lua/brand.lua",
+      "original": "/home/flint/.config/hypr/lua/brand.lua",
+      "kind": "source",
+      "sha256": "365437787c9985ef6928c22f97d3960a26e878e7504a685a7db729b60079d124"
+    },
+    {
+      "file": "references/source/rice/hypr/lua/settings.lua",
+      "original": "/home/flint/.config/hypr/lua/settings.lua",
+      "kind": "source",
+      "sha256": "9cc2be553a2b309b79644ae04a88fea207532388c647320f5b0f496babb3cc8d"
+    },
+    {
+      "file": "references/source/rice/hypr/lua/animations.lua",
+      "original": "/home/flint/.config/hypr/lua/animations.lua",
+      "kind": "source",
+      "sha256": "3e617fc90bde808c1254c4eb966bc3aabad4dda657313118ce24c1bde00b8e19"
+    },
+    {
+      "file": "references/source/rice/hypr/lua/environment.lua",
+      "original": "/home/flint/.config/hypr/lua/environment.lua",
+      "kind": "source",
+      "sha256": "3d11a73a29a29c778f71ad7790af68d94e559879fc4c8ee3c0821f9dab914e21"
+    },
+    {
+      "file": "references/source/rice/hypr/lua/autostart.lua",
+      "original": "/home/flint/.config/hypr/lua/autostart.lua",
+      "kind": "source",
+      "sha256": "61603d872d5b1e2564f34c75989b76c90421bb787ed0d7f13ceeb1879704f5c9"
+    },
+    {
+      "file": "references/source/rice/hypr/hyprlock.conf",
+      "original": "/home/flint/.config/hypr/hyprlock.conf",
+      "kind": "source",
+      "sha256": "55102d9db7c4d77f24ba2e1369d67ae11ea6dd42b8c028aa952be6f1856e0130"
+    },
+    {
+      "file": "references/source/rice/kitty/kitty.conf",
+      "original": "/home/flint/.config/kitty/kitty.conf",
+      "kind": "source",
+      "sha256": "0dc446dcb8b669bee6e51d6bd3d50de84c38a735997c2f254c4dac1824593690"
+    },
+    {
+      "file": "references/source/rice/kitty/kitty-themes/fl1nt.conf",
+      "original": "/home/flint/.config/kitty/kitty-themes/fl1nt.conf",
+      "kind": "source",
+      "sha256": "db1da2671c660d4f5909f48792747e4a688c1a20be435d3316f1ab55a4e2b070"
+    },
+    {
+      "file": "references/source/rice/starship.toml",
+      "original": "/home/flint/.config/starship.toml",
+      "kind": "source",
+      "sha256": "855f4a6efd3f83d96873ffdb44e207249243d45364352658243685ebadf304a4"
+    },
+    {
+      "file": "references/source/rice/waybar/style.css",
+      "original": "/home/flint/.config/waybar/style.css",
+      "kind": "source",
+      "sha256": "b6d2750bb88c46e04112f91827100eb404cf5d11b4701a2bdf17cfa5869e0947"
+    },
+    {
+      "file": "references/source/rice/waybar/config",
+      "original": "/home/flint/.config/waybar/config",
+      "kind": "source",
+      "sha256": "6f85b272e551435f5ae1f7747ca62f97d245b05b2e60725c34e1f1134a33f7ca"
+    },
+    {
+      "file": "references/source/rice/waybar/wallust/colors-waybar.css",
+      "original": "/home/flint/.config/waybar/wallust/colors-waybar.css",
+      "kind": "source",
+      "sha256": "713a92c72b373451aeb7719792c6dee5859e238d00ea80a2c5890a000ff9b33e"
+    },
+    {
+      "file": "references/source/rice/rofi/config.rasi",
+      "original": "/home/flint/.config/rofi/config.rasi",
+      "kind": "source",
+      "sha256": "84d4d888821e85e8063ebf9d40a8e032760b18aada95a2388bd3e4e7fc09297c"
+    },
+    {
+      "file": "references/source/rice/rofi/0-shared-fonts.rasi",
+      "original": "/home/flint/.config/rofi/0-shared-fonts.rasi",
+      "kind": "source",
+      "sha256": "50a51c32f3aff69e42332c970265a3a9f90750324b91f8b13a5d176d9644c5d5"
+    },
+    {
+      "file": "references/source/rice/rofi/themes/KooL_style-4.rasi",
+      "original": "/home/flint/.config/rofi/themes/KooL_style-4.rasi",
+      "kind": "source",
+      "sha256": "244f1f1a230a6832d8e1968264e9c2d8d80d2238158281d2e62291facf65e08b"
+    },
+    {
+      "file": "references/source/rice/rofi/wallust/colors-rofi.rasi",
+      "original": "/home/flint/.config/rofi/wallust/colors-rofi.rasi",
+      "kind": "source",
+      "sha256": "ad2cecd49e1f7e7d4ae8fc41129e8c240f5593a4bbfff106e3e99b94d0051d3d"
+    },
+    {
+      "file": "references/source/rice/swaync/style.css",
+      "original": "/home/flint/.config/swaync/style.css",
+      "kind": "source",
+      "sha256": "dcd27e260c9f6cf1a8ee5404d8d68fbb384beb9839a9a2b050d8fc7d1e819d51"
+    },
+    {
+      "file": "references/source/rice/btop/themes/fl1nt.theme",
+      "original": "/home/flint/.config/btop/themes/fl1nt.theme",
+      "kind": "source",
+      "sha256": "930f687b0469d9c607d065967436e394da9cab33b51373d6ec339ee4ad8ac659"
+    },
+    {
+      "file": "references/source/rice/quickshell/qml_color.json",
+      "original": "/home/flint/.config/quickshell/qml_color.json",
+      "kind": "source",
+      "sha256": "bfc7fd71df8b8d0b0fe1c08f4fb12701054654658bd41c7cfca6de93c9f277aa"
+    },
+    {
+      "file": "references/source/rice/wallust/wallust.toml",
+      "original": "/home/flint/.config/wallust/wallust.toml",
+      "kind": "source",
+      "sha256": "99da2e769525feba6c63bc8011c2f1bd27ed39f9a075c22fbd8fd39b76a75c81"
+    },
+    {
+      "file": "references/source/rice/gtk-3.0/settings.ini",
+      "original": "/home/flint/.config/gtk-3.0/settings.ini",
+      "kind": "source",
+      "sha256": "265ec6b657cac34103fec16d0c0b3a680caacb2b61db16d452b3bce57cc4190c"
+    },
+    {
+      "file": "references/source/rice/gtk-4.0/settings.ini",
+      "original": "/home/flint/.config/gtk-4.0/settings.ini",
+      "kind": "source",
+      "sha256": "cd17d5c364af8632b789e912f08b0e10d3fcff3c8eaf769cd240f238322eb3ff"
+    },
+    {
+      "file": "references/source/rice/gtk-3.0/colors.css",
+      "original": "/home/flint/.config/gtk-3.0/colors.css",
+      "kind": "source",
+      "sha256": "fd7a71b7b2837b00c27183c118ac5c68bcf7799d8a676f1cf3586e8fe4e96efc"
+    },
+    {
+      "file": "references/source/rice/qt6ct/qt6ct.conf",
+      "original": "/home/flint/.config/qt6ct/qt6ct.conf",
+      "kind": "source",
+      "sha256": "af586b76ef8d2a964de89644717e7ffed5d91515e742a4d953efac768f031e04"
+    },
+    {
+      "file": "references/source/rice/cava/config",
+      "original": "/home/flint/.config/cava/config",
+      "kind": "source",
+      "sha256": "4dbda12671380d9f96a4861da8b7a0fe48b20457a959f89b065b2c3446392de3"
+    },
+    {
+      "file": "references/source/rice/sddm/99-fl1nt.conf",
+      "original": "/etc/sddm.conf.d/99-fl1nt.conf",
+      "kind": "source",
+      "sha256": "d51a04f02a79e3613112435e045a94d381c0091207ecaee49fda38d3354a03bf"
+    },
+    {
+      "file": "references/source/rice/sddm/theme.conf.user",
+      "original": "/usr/share/sddm/themes/cachyos-simplyblack/theme.conf.user",
+      "kind": "source",
+      "sha256": "fed0ec8b2ce6644444715e2e42b4095cdaacb6499ee18da8d6b789806586207f"
+    },
+    {
+      "file": "references/evidence/rofi-resolved.rasi",
+      "original": "/home/flint/.cache/fl1nt-brand-study/rofi-resolved.rasi",
+      "kind": "runtime",
+      "sha256": "aeb4888bc9bacff227691815b455cdefadd857fa3ad0dfb202474033e806d5cb"
+    },
+    {
+      "file": "references/evidence/computed.json",
+      "original": "/home/flint/.cache/fl1nt-brand-study/computed.json",
+      "kind": "runtime",
+      "sha256": "99107bcbdcbad03432cdf5281d963183bf142cf6484afca1e937dd2c85f63af7"
+    },
+    {
+      "file": "references/screenshots/home.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/home.png",
+      "kind": "screenshot",
+      "sha256": "f551c02f042d7ff421fb3a7f2e468c124b419696764b884c1b3314167370d4d0",
+      "public_url": "https://fl1nt.dev/"
+    },
+    {
+      "file": "references/screenshots/about.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/about.png",
+      "kind": "screenshot",
+      "sha256": "055aa4570e1142b9d12666a137f00ae389010bd7c9330c860990122bb16f379b",
+      "public_url": "https://fl1nt.dev/about"
+    },
+    {
+      "file": "references/screenshots/blog.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/blog.png",
+      "kind": "screenshot",
+      "sha256": "4b5362b7a0ad700c74ec9040b23360d855331222fcf922d1fdab2588e0679e80",
+      "public_url": "https://fl1nt.dev/blog"
+    },
+    {
+      "file": "references/screenshots/post.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/post.png",
+      "kind": "screenshot",
+      "sha256": "de732d5a18fe907b3a2d358405ffa89d77f5b4735c6f0d5811eeae6e8b1c7eba",
+      "public_url": "https://fl1nt.dev/blog/im-leaving-pittsburgh"
+    },
+    {
+      "file": "references/screenshots/guestbook.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/guestbook.png",
+      "kind": "screenshot",
+      "sha256": "79552f6817e2a5084444724b0b87eb2703062339c39e4d167ba9a2a3a240531e",
+      "public_url": "https://fl1nt.dev/guestbook"
+    },
+    {
+      "file": "references/screenshots/journal.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/journal.png",
+      "kind": "screenshot",
+      "sha256": "00d7be72e69572d941a12773d610cad53f7efb36a25dae8553bca3853cf7830e",
+      "public_url": "https://fl1nt.dev/journal"
+    },
+    {
+      "file": "references/screenshots/origins.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/origins.png",
+      "kind": "screenshot",
+      "sha256": "37bcbcc18e1a75e9d6321cf80462f458ca0bffb1f967e789d9239b3c8c66b9bf",
+      "public_url": "https://fl1nt.dev/origins"
+    },
+    {
+      "file": "references/screenshots/hypersignal.png",
+      "original": "/home/flint/.cache/fl1nt-brand-study/hypersignal.png",
+      "kind": "screenshot",
+      "sha256": "4a2912d9d8cc622441148b1e8be1495addecd3c2b8516c50d76a7d2543f4870a",
+      "public_url": "https://fl1nt.dev/hypersignal"
+    },
+    {
+      "file": "assets/images/logo.png",
+      "original": "/home/flint/Development/web/public/images/logo.png",
+      "kind": "asset",
+      "sha256": "e4b7993954bff4d6cdceaa1d720010a02141cbeed46141736dc316cedb79df1d",
+      "public_url": "https://fl1nt.dev/images/logo.png",
+      "width": 280,
+      "height": 60,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/avatarv3-og.png",
+      "original": "/home/flint/Development/web/public/images/avatarv3-og.png",
+      "kind": "asset",
+      "sha256": "bd48f0004e495dcd18019605e7c87f432bbaef7e2f630eba10fdc26828811eb6",
+      "public_url": "https://fl1nt.dev/images/avatarv3-og.png",
+      "width": 82,
+      "height": 82,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/blue-bg.gif",
+      "original": "/home/flint/Development/web/public/images/blue-bg.gif",
+      "kind": "asset",
+      "sha256": "863a27bdb644ca03a9b0f720bd1deea0dab04ce2241d12ec427229a27d2f01b5",
+      "public_url": "https://fl1nt.dev/images/blue-bg.gif",
+      "width": 640,
+      "height": 400,
+      "frames": 40
+    },
+    {
+      "file": "assets/images/mybutton.gif",
+      "original": "/home/flint/Development/web/public/images/mybutton.gif",
+      "kind": "asset",
+      "sha256": "086c3d9fd7cc3123aac6ab6058792bd752fe84592ac7bcdcfcf8f36a9baf6b1c",
+      "public_url": "https://fl1nt.dev/images/mybutton.gif",
+      "width": 88,
+      "height": 31,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/enderman.gif",
+      "original": "/home/flint/Development/web/public/images/enderman.gif",
+      "kind": "asset",
+      "sha256": "0bf13581567057ec048b3b7b2e07bee05179a55c9ca0ad911215fff97b717970",
+      "public_url": "https://fl1nt.dev/images/enderman.gif",
+      "width": 188,
+      "height": 200,
+      "frames": 12
+    },
+    {
+      "file": "assets/images/favicon.ico",
+      "original": "/home/flint/Development/web/public/images/favicon.ico",
+      "kind": "asset",
+      "sha256": "19fe9170fdbffb8f01227bed3b5ca88f095ce119e37a12a9d45f9a3674df72dd",
+      "public_url": "https://fl1nt.dev/images/favicon.ico",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Alternate_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Alternate_Select.png",
+      "kind": "asset",
+      "sha256": "cd1f38d07ac0cc42846e23047e19bc6e29e9c234399df162b0469e934bcff07b",
+      "public_url": "https://fl1nt.dev/images/cursors/Alternate_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Busy.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Busy.png",
+      "kind": "asset",
+      "sha256": "63a0f40ea30771d00b85b55fd74d8679c863f708894ac27b5c78046db33217ec",
+      "public_url": "https://fl1nt.dev/images/cursors/Busy.png",
+      "width": 48,
+      "height": 48,
+      "frames": 12
+    },
+    {
+      "file": "assets/images/cursors/Diagonal_Resize.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Diagonal_Resize.png",
+      "kind": "asset",
+      "sha256": "ebdb4d6e7ea93096e9a5e32a52e8e42b934ad4ff34058bd3c641a8bf33b54bde",
+      "public_url": "https://fl1nt.dev/images/cursors/Diagonal_Resize.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Directional_Resize.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Directional_Resize.png",
+      "kind": "asset",
+      "sha256": "5b44a01fcdc9c851d8ed14b268ce5d248fcc62512e25e63471c92baca687fd05",
+      "public_url": "https://fl1nt.dev/images/cursors/Directional_Resize.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Handwriting.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Handwriting.png",
+      "kind": "asset",
+      "sha256": "1e1287c35ca06b1d9b702e127dbe88c426ca55156b4780ab862ed4df893587b1",
+      "public_url": "https://fl1nt.dev/images/cursors/Handwriting.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Help_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Help_Select.png",
+      "kind": "asset",
+      "sha256": "d52584da838bc66bac759e3e84ec3b53fe4cb9d708a911188d2570f25ea0efaf",
+      "public_url": "https://fl1nt.dev/images/cursors/Help_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Horizontal_Resize.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Horizontal_Resize.png",
+      "kind": "asset",
+      "sha256": "009818a4ce2644fcd0d5d6bea5aafaf1338eb26966b0d1df11b8489350c22dac",
+      "public_url": "https://fl1nt.dev/images/cursors/Horizontal_Resize.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Link_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Link_Select.png",
+      "kind": "asset",
+      "sha256": "0fc604491e167ea416eee517c5b98101205697431d2458911bd90cfef4106cde",
+      "public_url": "https://fl1nt.dev/images/cursors/Link_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Location_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Location_Select.png",
+      "kind": "asset",
+      "sha256": "982c27778cca37c3da61ea801d82ef9bac3dd14c7b9df8ab89f252cd5ca5a8a6",
+      "public_url": "https://fl1nt.dev/images/cursors/Location_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Move.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Move.png",
+      "kind": "asset",
+      "sha256": "4b9db4cae19035c888f29b8915b57e81be53709aa6d2ee516c3bc8802ce39ea8",
+      "public_url": "https://fl1nt.dev/images/cursors/Move.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Normal.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Normal.png",
+      "kind": "asset",
+      "sha256": "cf8008404ade6bcd44beaf7b9864ebf058109724850c3ddfd88320cc7bb4b812",
+      "public_url": "https://fl1nt.dev/images/cursors/Normal.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Person_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Person_Select.png",
+      "kind": "asset",
+      "sha256": "1aaef04dd5774325da58b182510574a8118a69c046671f7124a966a6d3e257af",
+      "public_url": "https://fl1nt.dev/images/cursors/Person_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Precision_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Precision_Select.png",
+      "kind": "asset",
+      "sha256": "338374446701eb93c6718b2427f056314e392fffe74935aa7b7148e8adaa8233",
+      "public_url": "https://fl1nt.dev/images/cursors/Precision_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Text_Select.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Text_Select.png",
+      "kind": "asset",
+      "sha256": "caa78dd66a2f6675a2044412f68e649071626e6aef40650559427760ae0e6917",
+      "public_url": "https://fl1nt.dev/images/cursors/Text_Select.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Unavailable.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Unavailable.png",
+      "kind": "asset",
+      "sha256": "cb966e7407c163e705444b9494c21cd2bfe7b76aa777d250b77f5d57d2e558f9",
+      "public_url": "https://fl1nt.dev/images/cursors/Unavailable.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Vertical_Resize.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Vertical_Resize.png",
+      "kind": "asset",
+      "sha256": "3690892dfc8d215179c80851550ef1518566b80df7c1265048ec57d94a584898",
+      "public_url": "https://fl1nt.dev/images/cursors/Vertical_Resize.png",
+      "width": 48,
+      "height": 48,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/cursors/Waiting_In_Background.png",
+      "original": "/home/flint/Development/web/public/images/cursors/Waiting_In_Background.png",
+      "kind": "asset",
+      "sha256": "bfeb8264c57de104e24eff3caeccdc2044a4e58feb959161ce05ed72e7a6e830",
+      "public_url": "https://fl1nt.dev/images/cursors/Waiting_In_Background.png",
+      "width": 48,
+      "height": 48,
+      "frames": 12
+    },
+    {
+      "file": "assets/images/terminal-scanlines.png",
+      "original": "/home/flint/.config/kitty/fl1nt-scanlines.png",
+      "kind": "asset",
+      "sha256": "0c5bd8d7b557985e857dbfe5d59e5a2eb8b5e7527b70c365b3d9e041274789c6",
+      "width": 1,
+      "height": 2,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/blue-bg.png",
+      "original": "/home/flint/Pictures/wallpapers/blue-bg.png",
+      "kind": "asset",
+      "sha256": "efab2396fbf7b42f8cfb6a9a293f720d51c9a1d02c07a4c09ea3426d5cab34fa",
+      "width": 640,
+      "height": 400,
+      "frames": 1
+    },
+    {
+      "file": "assets/images/blue-bg-2560.png",
+      "original": "/home/flint/Pictures/wallpapers/blue-bg-2560.png",
+      "kind": "asset",
+      "sha256": "87008295fa3b4329509ba3d3e71db8237b0c7e462292a4ec18aa83e99a0951ab",
+      "width": 2560,
+      "height": 1440,
+      "frames": 1
+    },
+    {
+      "file": "assets/fonts/terminusttf-4.49.3-webfont.woff",
+      "original": "/home/flint/Development/web/public/fonts/terminusttf-4.49.3-webfont.woff",
+      "kind": "font",
+      "sha256": "106d93176c5ca2141f63a8ae1d4d2c1ff2fd88773dd551ece207627b34b6c4c7",
+      "public_url": "https://fl1nt.dev/fonts/terminusttf-4.49.3-webfont.woff"
+    },
+    {
+      "file": "assets/fonts/terminusttf-4.49.3-webfont.woff2",
+      "original": "/home/flint/Development/web/public/fonts/terminusttf-4.49.3-webfont.woff2",
+      "kind": "font",
+      "sha256": "90261dfbff3cf25a6ba13d59bc6265533f581e8063976e46d5dfdad08f4aa220",
+      "public_url": "https://fl1nt.dev/fonts/terminusttf-4.49.3-webfont.woff2"
+    },
+    {
+      "file": "assets/fonts/Handjet-Variable.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/Handjet-Variable.ttf",
+      "kind": "font",
+      "sha256": "9262749e8bb0b73ebcae0e20428689c3c59576eebeb6c4e1020300d2d41bdf4d"
+    },
+    {
+      "file": "assets/fonts/SpaceMono-Bold.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/SpaceMono-Bold.ttf",
+      "kind": "font",
+      "sha256": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59"
+    },
+    {
+      "file": "assets/fonts/SpaceMono-BoldItalic.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/SpaceMono-BoldItalic.ttf",
+      "kind": "font",
+      "sha256": "cdcc95eddee312879a9728494e595f591cb159f3f276d79bc58673dec7e57138"
+    },
+    {
+      "file": "assets/fonts/SpaceMono-Italic.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/SpaceMono-Italic.ttf",
+      "kind": "font",
+      "sha256": "eca264c8690a91fe837d19a6badf2d88961610c4c8aafcb196526192a9f258c5"
+    },
+    {
+      "file": "assets/fonts/SpaceMono-Regular.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/SpaceMono-Regular.ttf",
+      "kind": "font",
+      "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18"
+    },
+    {
+      "file": "assets/fonts/TerminusTTF-4.49.3.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/TerminusTTF-4.49.3.ttf",
+      "kind": "font",
+      "sha256": "f668ad7884635e112bcfa2ced6ccb9550128f643bf539cb049bd90bd8afbf4b3"
+    },
+    {
+      "file": "assets/fonts/TerminusTTF-Bold-4.49.3.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/TerminusTTF-Bold-4.49.3.ttf",
+      "kind": "font",
+      "sha256": "6be22b2f690c54a848da85cbbb2461843105214ef74f4a71ba139fbeecb25ef5"
+    },
+    {
+      "file": "assets/fonts/TerminusTTF-Bold-Italic-4.49.3.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/TerminusTTF-Bold-Italic-4.49.3.ttf",
+      "kind": "font",
+      "sha256": "115392036be665973d8dae3038708ce173f14af6b1888bdf3817961c23535be6"
+    },
+    {
+      "file": "assets/fonts/TerminusTTF-Italic-4.49.3.ttf",
+      "original": "/home/flint/.local/share/fonts/fl1nt-brand/TerminusTTF-Italic-4.49.3.ttf",
+      "kind": "font",
+      "sha256": "525ee0ced02939f1a0eedb7f56be5328d255aa49d96cd5bc48070b6d276585c2"
+    },
+    {
+      "file": "references/evidence/font-metadata.json",
+      "kind": "runtime",
+      "sha256": "68bf05bc3ce11e0d088974dc73c151b9954bc9f1f5fa986a5926dea893d14805"
+    },
+    {
+      "file": "references/evidence/hypr-runtime.json",
+      "kind": "runtime",
+      "sha256": "9e1516c8ca3df06e092c7fe4d150814d632a542ad1d5bea3fcda5b4842879c74"
+    },
+    {
+      "file": "references/evidence/interactions.json",
+      "kind": "runtime",
+      "sha256": "3d9f5b3896ea247786fe3bea349651ebacaf9e59740dd9afedc36cb9de03ce8b"
+    },
+    {
+      "file": "references/evidence/live-hashes.json",
+      "kind": "runtime",
+      "sha256": "896e6e47438ba88c46546eca617869b47fe048e9babe7f811905bd293ed429d2"
+    },
+    {
+      "file": "references/evidence/rofi-fonts.txt",
+      "kind": "runtime",
+      "sha256": "7b3bdc00635be8fbe51fc66395001301e4f02915afa6e5d969ffa1423d24227e"
+    },
+    {
+      "file": "references/evidence/supplemental.json",
+      "kind": "runtime",
+      "sha256": "cd1033af66a1f59cf2d1848183e747552e393a7221bbd880478320a746d7a560"
+    },
+    {
+      "file": "references/screenshots/kitty.png",
+      "kind": "screenshot",
+      "sha256": "ab6f92a55d758c43f3ba74838a8c2d116855bdf1246cc057b2738854efa0e78e"
+    },
+    {
+      "file": "references/screenshots/origins-entered.png",
+      "kind": "screenshot",
+      "sha256": "07bea9a5e531c48e3d5ef684e44477ad2a1f375cf43d2de90118e8453eadf115"
+    },
+    {
+      "file": "references/screenshots/rofi.png",
+      "kind": "screenshot",
+      "sha256": "93a60a8da2439230b11a9a300fb29a41d3194b2ecbc1c23cf534e1d30a4cb7db"
+    },
+    {
+      "file": "references/source/rice/rofi/themes/KooL_style-13-Vertical.rasi",
+      "kind": "source",
+      "sha256": "1ccfcdac56abf5c012de89519a51a2827d69af018d0a1ae82ae9d36155a2113b"
+    }
+  ]
+}

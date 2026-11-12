@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/metadata') %>
+  </head>
+  <body class="crt">
+    <div class="crt-glow"></div>
+    <div id="crt" class="crt">
+      <%- include('partials/header') %>
+      <%- include('partials/nav', { currentPage: 'blog' }) %>
+      <main class="content content-grid">
+        <div class="main-content-wrapper">
+          <section class="hero-section">
+            <div class="blog-editor-window">
+              <div class="editor-header">
+                <div class="editor-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control maximize"></span>
+                </div>
+                <span class="editor-title">~/web/blog_schedule.js</span>
+                                 <div class="editor-actions">
+                   <span class="action">File</span>
+                   <span class="action">Edit</span>
+                   <span class="action">View</span>
+                 </div>
+              </div>
+                             <div class="editor-tabs">
+                 <div class="tab active">
+                   <span class="tab-icon">></span>
+                   <span class="tab-name">blog_schedule.js</span>
+                 </div>
+                 <div class="tab">
+                   <span class="tab-icon">*</span>
+                   <span class="tab-name">thoughts.js</span>
+                   <span class="tooltip">bro this is just here for the effect lol</span>
+                 </div>
+                 <div class="tab">
+                   <span class="tab-icon">+</span>
+                   <span class="tab-name">ideas.txt</span>
+                   <span class="tooltip">bro this is just here for the effect lol</span>
+                 </div>
+               </div>
+              <div class="editor-body">
+                <div class="line-numbers">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                </div>
+                <div class="editor-content">
+                  <div class="code-line">
+                    <span class="comment">// Welcome to my blog - where I dump my thoughts</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="keyword">const</span> <span class="variable">schedule</span> <span class="operator">=</span> <span class="string">"there is no schedule. just whenever i feel like it."</span><span class="punctuation">;</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="keyword">const</span> <span class="variable">topics</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"career stuff"</span><span class="punctuation">,</span> <span class="string">"programming (obviously)"</span><span class="punctuation">,</span> <span class="string">"projects"</span><span class="punctuation">,</span> <span class="string">"life lessons"</span><span class="punctuation">,</span> <span class="string">"literally anything tbh"</span><span class="punctuation">];</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="keyword">function</span> <span class="function">buildBlogPosts</span><span class="punctuation">() {</span>
+                  </div>
+                  <div class="code-line">
+                    &nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">topics</span><span class="punctuation">.</span><span class="function">map</span><span class="punctuation">(</span><span class="variable">topic</span> <span class="operator">=></span> <span class="punctuation">({</span>
+                  </div>
+                  <div class="code-line">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">topic</span><span class="punctuation">,</span> <span class="variable">publishedWhen</span><span class="punctuation">:</span> <span class="variable">schedule</span>
+                  </div>
+                  <div class="code-line">
+                    &nbsp;&nbsp;<span class="punctuation">}));</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="punctuation">}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="section-card blog-posts-section">
+            <div class="section-header">
+              <h2 class="section-title">// Recent Posts</h2>
+              <% if (typeof isAdmin !== 'undefined' && isAdmin) { %>
+                <div class="admin-actions">
+                  <a class="journal-btn primary small" href="/blog/new">+ New post</a>
+                </div>
+              <% } %>
+            </div>
+            
+                        <% if (posts.length > 0) { %>
+              <div class="blog-posts-grid" id="blogPostsGrid">
+                <% posts.forEach((post, index) => { %>
+                  <article class="blog-post-card<%= index >= 8 ? ' hidden' : '' %><%= (post.published === false) ? ' is-draft' : '' %>">
+                    <div class="post-card-header">
+                      <div class="post-window-controls">
+                        <span class="post-control"></span>
+                        <span class="post-control"></span>
+                        <span class="post-control"></span>
+                      </div>
+                      <div class="post-meta-badge">
+                        <% if (post.published === false) { %><span class="draft-badge">draft</span><% } %>
+                        <span class="post-number">#<%= String(posts.length - index).padStart(2, '0') %></span>
+                      </div>
+                    </div>
+                    
+                    <div class="post-content-area">
+                      <div class="post-title-section">
+                        <h3 class="post-title">
+                          <span class="title-prefix">></span>
+                          <a href="/blog/<%= post.slug %>" class="post-link">
+                            <%= post.title %>
+                          </a>
+                        </h3>
+                        <div class="post-date-info">
+                          <span class="date-label">published:</span>
+                          <span class="post-date"><%- post.date %></span>
+                          <% if (typeof isAdmin !== 'undefined' && isAdmin) { %>
+                            <a class="post-edit-link" href="/blog/<%= post.slug %>/edit" title="Edit this post">edit</a>
+                          <% } %>
+                        </div>
+                      </div>
+                      
+                      <% if (post.excerpt) { %>
+                        <div class="post-preview">
+                          <div class="preview-label">// preview</div>
+                          <p class="post-excerpt"><%= post.excerpt %></p>
+                        </div>
+                      <% } %>
+                      
+                      <div class="post-actions">
+                        <a href="/blog/<%= post.slug %>" class="action-button primary">
+                          <span class="button-icon">>></span>
+                          <span class="button-text">Read Full Post</span>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="post-card-footer">
+                      <div class="post-signature">
+                        <span class="signature-text"><%= post.source === 'db' ? 'db://blog/' + post.slug : 'web/blog/' + post.slug + '.md' %></span>
+                      </div>
+                    </div>
+                  </article>
+                <% }); %>
+              </div>
+              
+              <% if (posts.length > 8) { %>
+                <div class="posts-footer">
+                  <button class="show-more-btn" id="showMorePosts">
+                    <span class="btn-text">Show <%= posts.length - 8 %> more post<%= posts.length - 8 > 1 ? 's' : '' %></span>
+                    <span class="btn-icon">↓</span>
+                  </button>
+                </div>
+              <% } %>
+            <% } %>
+            
+            <div class="blog-footer">
+              <div class="blog-footer-content">
+                <p>You made it this far and still haven't joined my <a href="https://discord.gg/QaQ74W6Rm3" target="_blank" class="glow-link">Discord</a>???? Wtf???????</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <%- include('partials/sidebar', { blogs: posts.slice(0, 5) || [], commits: commits || [] }) %>
+      </main>
+      <%- include('partials/footer') %>
+    </div>
+    
+    <script>
+      // Blog posts show more functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const blogPostsGrid = document.getElementById('blogPostsGrid');
+        const showMoreBtn = document.getElementById('showMorePosts');
+        
+        if (showMoreBtn && blogPostsGrid) {
+          const posts = Array.from(blogPostsGrid.querySelectorAll('.blog-post-card'));
+          let isExpanded = false;
+          
+          showMoreBtn.addEventListener('click', function() {
+            isExpanded = !isExpanded;
+            
+            posts.forEach((post, index) => {
+              if (index >= 8) {
+                if (isExpanded) {
+                  post.style.display = 'flex';
+                  post.classList.remove('hidden');
+                  post.style.animation = 'fadeInUp 0.3s ease forwards';
+                } else {
+                  post.style.display = 'none';
+                  post.classList.add('hidden');
+                }
+              }
+            });
+            
+            const btnText = showMoreBtn.querySelector('.btn-text');
+            const btnIcon = showMoreBtn.querySelector('.btn-icon');
+            
+            if (isExpanded) {
+              btnText.textContent = 'Show less';
+              showMoreBtn.classList.add('expanded');
+              btnIcon.textContent = '↑';
+            } else {
+              const hiddenCount = posts.filter((p, i) => i >= 8).length;
+              btnText.textContent = `Show ${hiddenCount} more post${hiddenCount > 1 ? 's' : ''}`;
+              showMoreBtn.classList.remove('expanded');
+              btnIcon.textContent = '↓';
+            }
+          });
+        }
+      });
+    </script>
+    <%- include('partials/scripts') %>
+  </body>
+</html> 

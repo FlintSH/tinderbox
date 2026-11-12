@@ -1,0 +1,51 @@
+/* Shared fl1nt.dev primitives for README panels. Values come from
+   skills/fl1nt-design/assets/tokens.css and references/web-components.md. */
+@import url("../../skills/fl1nt-design/assets/tokens.css");
+@font-face { font-family: "Terminus (TTF)"; src: url("../../skills/fl1nt-design/assets/fonts/terminusttf-4.49.3-webfont.woff2") format("woff2"); }
+@font-face { font-family: "Terminus (TTF)"; font-weight: 700; src: url("../../skills/fl1nt-design/assets/fonts/TerminusTTF-Bold-4.49.3.ttf"); }
+@font-face { font-family: "Handjet"; src: url("../../skills/fl1nt-design/assets/fonts/Handjet-Variable.ttf"); font-weight: 100 900; }
+@font-face { font-family: "Space Mono"; src: url("../../skills/fl1nt-design/assets/fonts/SpaceMono-Regular.ttf"); }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: transparent; }
+body {
+  font-family: var(--font-mono); font-size: 14px; line-height: 1.5; color: var(--text-primary);
+  image-rendering: pixelated; -webkit-font-smoothing: none;
+}
+/* Every panel is one #shot, 880 CSS px wide, captured at 2x. */
+#shot { width: 880px; position: relative; }
+
+/* Pixel background, drawn from blue-bg.gif frames by panel.js. */
+.bg { position: absolute; inset: 0; border-radius: var(--border-radius); overflow: hidden; background: #000; }
+.bg canvas { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+
+.section-card {
+  background: var(--bg-secondary); border: var(--border-width) solid var(--primary);
+  border-radius: var(--border-radius); box-shadow: 0 0 15px rgba(134, 124, 255, .15);
+  padding: var(--spacing-xl);
+}
+.section-title { font-family: var(--font-mono); font-size: 1.4rem; font-weight: 700; color: var(--primary); margin: 0 0 var(--spacing-md); letter-spacing: 1px; }
+.label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); }
+.glow { text-shadow: 0 0 2px currentColor; }
+
+/* Terminal wrapper (about page). */
+.terminal { border: var(--border-width) solid var(--primary); border-radius: var(--border-radius); overflow: hidden; background: var(--bg-primary); box-shadow: 0 0 25px rgba(134, 124, 255, .3); }
+.terminal-head { background: var(--primary); color: #000; padding: var(--spacing-sm) var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-md); }
+.dots { display: flex; gap: 4px; }
+.dots i { width: 12px; height: 12px; border-radius: 50%; opacity: .8; display: block; }
+.dots i:nth-child(1) { background: #ff5f57; } .dots i:nth-child(2) { background: #ffbd2e; } .dots i:nth-child(3) { background: #28ca42; }
+.terminal-body { padding: var(--spacing-lg); }
+.prompt { color: var(--success); } .cmd { color: var(--text-primary); }
+
+/* Copy that has not been written yet. */
+.todo { color: var(--warning); border: 1px dashed var(--warning); border-radius: var(--border-radius-small); padding: 2px 8px; display: inline-block; }
+
+/* Section panels on the pixel background. */
+.section-panel #shot, #shot.section { padding: 20px; }
+.section-card { position: relative; }
+.intro { color: var(--text-secondary); font-size: 14px; line-height: 1.6; margin: 0 0 var(--spacing-lg); max-width: 70ch; }
+.badge { font-size: 8px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; padding: 3px 6px; border-radius: 10px;
+  background: rgba(134, 124, 255, .2); border: 1px solid var(--primary); color: var(--primary); white-space: nowrap; }
+.badge.cyan { background: rgba(0, 255, 255, .12); border-color: var(--accent); color: var(--accent); }
+.badge.pink { background: rgba(255, 105, 180, .2); border-color: var(--secondary); color: var(--secondary); }
+.hint { color: var(--text-dim); }

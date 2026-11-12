@@ -1,0 +1,3517 @@
+[
+  {
+    "name": "home",
+    "status": 200,
+    "url": "https://fl1nt.dev/",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "loaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".content-grid": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "32px 24px",
+        "gap": "24px",
+        "gridTemplateColumns": "1028px 300px",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1400px",
+        "minWidth": "0px",
+        "maxWidth": "1400px"
+      },
+      ".profile-card": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0.85)",
+        "backgroundImage": "none",
+        "border": "2px solid rgb(134, 124, 255)",
+        "borderRadius": "8px",
+        "padding": "32px",
+        "gap": "32px",
+        "gridTemplateColumns": "120px 808px",
+        "boxShadow": "rgba(134, 124, 255, 0.2) 0px 0px 20px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1028px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".badge": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "8px",
+        "fontWeight": "700",
+        "lineHeight": "12px",
+        "letterSpacing": "0.8px",
+        "textTransform": "uppercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "10px",
+        "padding": "3px 6px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "rgb(0, 0, 0) 0px 0px 0.5px",
+        "animation": "none",
+        "width": "93.6094px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".hero-title": {
+        "fontFamily": "Handjet, sans-serif",
+        "fontSize": "35.2px",
+        "fontWeight": "800",
+        "lineHeight": "49.28px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "10.56px",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "808px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".hero-description": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "rgb(207, 207, 207) 0px 0px 0.5px",
+        "animation": "none",
+        "width": "808px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".section-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "22.4px",
+        "fontWeight": "700",
+        "lineHeight": "33.6px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "134.156px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".project-card": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(134, 124, 255, 0.1)",
+        "backgroundImage": "none",
+        "border": "1px solid rgb(255, 105, 180)",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(255, 105, 180, 0.15) 0px 0px 20px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "304px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".card-header h3": {
+        "fontFamily": "Handjet, sans-serif",
+        "fontSize": "17.6px",
+        "fontWeight": "600",
+        "lineHeight": "21.12px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "32.4375px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".card-description": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "16.8px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "rgb(207, 207, 207) 0px 0px 0.5px",
+        "animation": "none",
+        "width": "270px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".filter-badge": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "10px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "1px solid rgb(134, 124, 255)",
+        "borderRadius": "4px",
+        "padding": "4px 8px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(134, 124, 255, 0.6) 0px 0px 12px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "34.5px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "60px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "Hey, I'm \n                \n                  \n                    [ username ]\n                    [ irl ]\n                  \n                  \n                    FlintSH\n                    Zach",
+      "RE-TAPED",
+      "// Projects",
+      "Flare",
+      "Paradigm",
+      "Disclone",
+      "reve-sdk",
+      "Outlier-Tools",
+      "website-finder",
+      "Legcord",
+      "Awesome Selfhosted Data",
+      "// Live Chat",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter",
+      "// Settings",
+      "Owner Access"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "/images/avatarv3-og.png",
+        "width": 82,
+        "height": 82
+      },
+      {
+        "src": "/images/re-taped-wordmark.png",
+        "width": 2458,
+        "height": 451
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "about",
+    "status": 200,
+    "url": "https://fl1nt.dev/about",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".section-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "22.4px",
+        "fontWeight": "700",
+        "lineHeight": "33.6px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "960px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".card-header h3": {
+        "fontFamily": "Handjet, sans-serif",
+        "fontSize": "17.6px",
+        "fontWeight": "600",
+        "lineHeight": "21.12px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "159.125px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "67px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".terminal-window": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "2px solid rgb(134, 124, 255)",
+        "borderRadius": "8px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(134, 124, 255, 0.3) 0px 0px 25px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1028px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".terminal-header": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1024px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "// Little bit about me",
+      "// About this website",
+      "Favorite Music & Games",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter",
+      "// Settings",
+      "Owner Access"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "/images/avatarv3-og.png",
+        "width": 82,
+        "height": 82
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "blog",
+    "status": 200,
+    "url": "https://fl1nt.dev/blog",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "loaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".content-grid": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "32px 24px",
+        "gap": "24px",
+        "gridTemplateColumns": "1028px 300px",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1400px",
+        "minWidth": "0px",
+        "maxWidth": "1400px"
+      },
+      ".section-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "22.4px",
+        "fontWeight": "700",
+        "lineHeight": "33.6px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "182.938px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "60px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".blog-editor-window": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "2px solid rgb(134, 124, 255)",
+        "borderRadius": "8px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(134, 124, 255, 0.3) 0px 0px 25px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1028px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "// Recent Posts",
+      ">\n                          \n                            I'm Leaving Pittsburgh",
+      ">\n                          \n                            Building Web Agents Before Everyone Else",
+      ">\n                          \n                            The End of Avora",
+      ">\n                          \n                            Thank You for Firing Me, Actually",
+      ">\n                          \n                            Seek Discomfort",
+      ">\n                          \n                            The Power of Just Doing Things",
+      ">\n                          \n                            State of the Web",
+      ">\n                          \n                            From Perfectionism to Progress",
+      ">\n                          \n                            Introducing Avora: My latest big project",
+      ">\n                          \n                            Announcement: Welcome to the new website!",
+      ">\n                          \n                            Announcement: The future with Shockbyte!",
+      ">\n                          \n                            Nebula X EarthPol: What went wrong?",
+      ">\n                          \n                            Quitting Minecraft: Was it worth it?",
+      ">\n                          \n                            Intentions Matter",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "post",
+    "status": 200,
+    "url": "https://fl1nt.dev/blog/im-leaving-pittsburgh",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "60px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".browser-window": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0.85)",
+        "backgroundImage": "none",
+        "border": "2px solid rgb(134, 124, 255)",
+        "borderRadius": "8px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(134, 124, 255, 0.3) 0px 0px 25px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1028px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "I'm Leaving Pittsburgh",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter",
+      "// Settings",
+      "Owner Access"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "guestbook",
+    "status": 200,
+    "url": "https://fl1nt.dev/guestbook",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".section-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "22.4px",
+        "fontWeight": "700",
+        "lineHeight": "33.6px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "960px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "95px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".guestbook-form": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "16px",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "960px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "// Guestbook",
+      "// Sign the guestbook",
+      "// Entries",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter",
+      "// Settings",
+      "Owner Access"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "journal",
+    "status": 200,
+    "url": "https://fl1nt.dev/journal",
+    "title": "fl1nt.dev",
+    "stylesheets": [
+      "https://fl1nt.dev/css/style-new.min.css?v=1789355163000",
+      "https://fl1nt.dev/css/crt.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "600"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "unloaded",
+        "weight": "800"
+      },
+      {
+        "family": "Handjet",
+        "status": "loaded",
+        "weight": "800"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Space Mono",
+        "status": "unloaded",
+        "weight": "700"
+      },
+      {
+        "family": "Terminus (TTF)",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      },
+      ".main-logo": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "280px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".header-tagline": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(207, 207, 207)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(207, 207, 207)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "299px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".section-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "22.4px",
+        "fontWeight": "700",
+        "lineHeight": "33.6px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "121.953px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".widget-title": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "color": "rgb(134, 124, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(134, 124, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "248px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".nav-link.active": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(134, 124, 255)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "4px",
+        "padding": "8px 16px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "81px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".journal-hero": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0.85)",
+        "backgroundImage": "none",
+        "border": "2px solid rgb(134, 124, 255)",
+        "borderRadius": "8px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "rgba(134, 124, 255, 0.22) 0px 0px 22px 0px",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1028px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".journal-posts .post-link": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(134, 124, 255, 0.1)",
+        "backgroundImage": "none",
+        "border": "1px solid rgba(134, 124, 255, 0.3)",
+        "borderRadius": "8px",
+        "padding": "16px 24px",
+        "gap": "24px",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "960px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".journal-posts .post-title": {
+        "fontFamily": "Handjet, sans-serif",
+        "fontSize": "23.2px",
+        "fontWeight": "600",
+        "lineHeight": "26.68px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "8px",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "910px",
+        "minWidth": "auto",
+        "maxWidth": "none"
+      },
+      ".hero-stat strong": {
+        "fontFamily": "Handjet, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": "800",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 105, 180)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(255, 105, 180)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "rgba(255, 105, 180, 0.45) 0px 0px 8px",
+        "animation": "none",
+        "width": "auto",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      ".crt": {
+        "fontFamily": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "21px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "backgroundImage": "url(\"https://fl1nt.dev/images/blue-bg.gif\"), none",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "0.3s infinite flicker",
+        "width": "1440px",
+        "minWidth": "1200px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "// Entries",
+      "Wednesday, September 16, 2026",
+      "Monday, September 14, 2026",
+      "I'm back (for now)",
+      "Thursday, July 9, 2026",
+      "Wednesday, July 8, 2026",
+      "Tuesday, July 7, 2026",
+      "Friday, July 3, 2026",
+      "Thursday, July 2, 2026",
+      "Wednesday, July 1, 2026",
+      "Tuesday, June 30, 2026",
+      "Monday, June 29, 2026",
+      "Sunday, June 28, 2026",
+      "// Currently Playing",
+      "// Recent Posts",
+      "// Webring & Links",
+      "// Latest Commits",
+      "// Click Counter",
+      "// Settings",
+      "Owner Access"
+    ],
+    "imageSources": [
+      {
+        "src": "/images/logo.png",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "src": "https://cdn.fl1nt.dev/GAGE1/RcJkPe.jpg/raw",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://cdn.fl1nt.dev/GAGE1/iZ-bj0.jpg/raw",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://cdn.fl1nt.dev/GAGE1/w7-lP-.jpg/raw",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://cdn.fl1nt.dev/GAGE1/jD7O7B.jpg/raw",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/albumcover.png",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "src": "/images/buttons/arch.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/guestbook.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/birb.gif",
+        "width": 89,
+        "height": 32
+      },
+      {
+        "src": "/images/buttons/cdn.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/kzn.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/thebee.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/armcord.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/buttons/pzurek.png",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/mybutton.gif",
+        "width": 88,
+        "height": 31
+      },
+      {
+        "src": "/images/enderman.gif",
+        "width": 188,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "name": "origins",
+    "status": 200,
+    "url": "https://fl1nt.dev/origins",
+    "title": "origins",
+    "stylesheets": [
+      "https://fl1nt.dev/css/origins.min.css"
+    ],
+    "fonts": [
+      {
+        "family": "Share Tech Mono",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Share Tech Mono\", \"Terminus (TTF)\", \"Courier New\", monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "23.8px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(192, 192, 192)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(192, 192, 192)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [],
+    "imageSources": []
+  },
+  {
+    "name": "hypersignal",
+    "status": 200,
+    "url": "https://fl1nt.dev/hypersignal",
+    "title": "hypersignal",
+    "stylesheets": [
+      "https://fl1nt.dev/css/hypersignal.min.css?v=1789355163000"
+    ],
+    "fonts": [
+      {
+        "family": "Press Start 2P",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Press Start 2P",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Press Start 2P",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Press Start 2P",
+        "status": "unloaded",
+        "weight": "400"
+      },
+      {
+        "family": "Press Start 2P",
+        "status": "loaded",
+        "weight": "400"
+      },
+      {
+        "family": "Share Tech Mono",
+        "status": "loaded",
+        "weight": "400"
+      }
+    ],
+    "elements": {
+      "html": {
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      },
+      "body": {
+        "fontFamily": "\"Share Tech Mono\", \"Courier New\", monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(248, 247, 255)",
+        "backgroundColor": "rgb(3, 0, 10)",
+        "backgroundImage": "radial-gradient(circle at 20% 18%, rgba(255, 43, 214, 0.08), rgba(0, 0, 0, 0) 34%), radial-gradient(circle at 80% 24%, rgba(0, 247, 255, 0.07), rgba(0, 0, 0, 0) 38%), radial-gradient(circle at 50% 100%, rgba(57, 255, 20, 0.06), rgba(0, 0, 0, 0) 44%), none",
+        "border": "0px none rgb(248, 247, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "boxShadow": "none",
+        "textShadow": "none",
+        "animation": "none",
+        "width": "1440px",
+        "minWidth": "0px",
+        "maxWidth": "none"
+      }
+    },
+    "headingText": [
+      "HYPERSIGNAL"
+    ],
+    "imageSources": []
+  }
+]

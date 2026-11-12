@@ -1,0 +1,2 @@
+# Skills that stay on the machine and never sync to the repo. One folder name per line.
+# Names you would rather not publish at all go in ~/.config/tinderbox/sync.ignore instead.

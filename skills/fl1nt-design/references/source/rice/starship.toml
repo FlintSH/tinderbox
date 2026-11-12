@@ -1,0 +1,94 @@
+# fl1nt.dev prompt - the site's status readouts as a shell prompt
+#
+# Brand motifs from fl1nt.dev:
+#   "// Section"  -> the // prefix on every prompt line (site section titles)
+#   "[ LABEL ]"   -> git/lang/time readouts use the site's bracket-label style
+#   LOCAL TIME    -> right-aligned clock, like the header status grid
+#   blinking caret-> kitty handles this (blinking primary block cursor)
+# Palette = fl1nt.dev :root css variables
+
+format = """
+[//](fg:primary-dim) $directory$git_branch$git_status$nodejs$rust$python$docker_context$cmd_duration$fill$time
+$character"""
+
+add_newline = true
+palette = "fl1nt"
+
+[palettes.fl1nt]
+primary = "#867cff"
+primary-dim = "#6b63cc"
+primary-bright = "#a499ff"
+secondary = "#ff69b4"
+accent = "#00ffff"
+success = "#00ff41"
+warning = "#ffaa00"
+error = "#ff4444"
+text = "#ffffff"
+text-secondary = "#cfcfcf"
+text-dim = "#999999"
+
+[directory]
+style = "bold primary"
+truncation_length = 4
+truncate_to_repo = true
+read_only = " 󰌾"
+read_only_style = "error"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+style = "secondary"
+format = '[\[ ](primary-dim)[$branch(:$remote_branch)]($style)'
+
+[git_status]
+style = "warning"
+format = '([ $all_status$ahead_behind]($style))[ \]](primary-dim) '
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "*${count}"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+[nodejs]
+style = "success"
+format = '[\[ ](primary-dim)[node $version]($style)[ \]](primary-dim) '
+version_format = "v${major}"
+detect_files = ["package.json", ".node-version"]
+
+[rust]
+style = "warning"
+format = '[\[ ](primary-dim)[rust $version]($style)[ \]](primary-dim) '
+version_format = "v${major}.${minor}"
+
+[python]
+style = "accent"
+format = '[\[ ](primary-dim)[py $version]($style)[ \]](primary-dim) '
+version_format = "v${major}.${minor}"
+
+[docker_context]
+style = "primary-dim"
+format = '[\[ ](primary-dim)[docker $context]($style)[ \]](primary-dim) '
+only_with_files = true
+
+[cmd_duration]
+min_time = 3000
+style = "text-dim"
+format = "[took $duration]($style) "
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+time_format = "%T"
+style = "text-dim"
+format = '[\[ ](primary-dim)[$time]($style)[ \]](primary-dim)'
+
+[character]
+success_symbol = "[❯](bold accent)"
+error_symbol = "[❯](bold error)"
+vimcmd_symbol = "[❮](bold secondary)"

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/metadata') %>
+  </head>
+  <body class="crt">
+    <div class="crt-glow"></div>
+    <div id="crt" class="crt">
+      <%- include('partials/header') %>
+      <%- include('partials/nav', { currentPage: 'guestbook' }) %>
+      <main class="content guestbook-layout">
+        <div class="guestbook-content-wrapper">
+          <section class="section-card guestbook-intro">
+            <h2 class="section-title">// Guestbook</h2>
+            <p class="guestbook-blurb">
+              Drop your name to say you've been on fl1nt.dev and link your site if you have one.
+              Leave whatever's on your mind. I genuinely read every single one of these, so thanks for signing. :]
+            </p>
+            <p class="guestbook-meta">
+              <span class="signature-count"><%= parseInt(totalEntries) %></span>
+              <%= parseInt(totalEntries) === 1 ? 'signature' : 'signatures' %> so far
+            </p>
+          </section>
+
+          <section class="section-card guestbook-sign">
+            <h2 class="section-title">// Sign the guestbook</h2>
+            <form action="/guestbook" method="POST" class="guestbook-form">
+              <div class="gb-field-row">
+                <div class="gb-field">
+                  <label class="gb-label" for="name">Name</label>
+                  <input type="text" id="name" name="name" maxlength="16" required class="gb-input" placeholder="What should I call you?" autocomplete="off" />
+                </div>
+                <div class="gb-field">
+                  <label class="gb-label" for="website">Website <span class="gb-optional">(optional)</span></label>
+                  <input type="url" id="website" name="website" maxlength="30" class="gb-input" placeholder="https://yoursite.com" autocomplete="off" />
+                </div>
+              </div>
+              <div class="gb-field">
+                <label class="gb-label" for="message">Message</label>
+                <input type="text" id="message" name="message" maxlength="94" required class="gb-input" placeholder="Leave a little note..." autocomplete="off" />
+              </div>
+              <div class="gb-form-actions">
+                <button type="submit" class="gb-submit">Sign the guestbook</button>
+                <span class="gb-char-counter"><span id="messageCount">0</span>/94</span>
+              </div>
+            </form>
+          </section>
+
+          <section class="section-card guestbook-entries-section">
+            <div class="section-header">
+              <h2 class="section-title">// Entries</h2>
+              <span class="gb-page-indicator">Page <%= currentPage || 1 %><% if (totalPages && totalPages > 1) { %> of <%= totalPages %><% } %></span>
+            </div>
+
+            <div class="guestbook-entries">
+              <% if (entries && entries.length > 0) { %>
+                <% entries.forEach((entry) => { %>
+                  <article class="guestbook-entry">
+                    <div class="entry-top">
+                      <span class="entry-name">
+                        <% if (entry.website) { %>
+                          <a href="<%= entry.website.startsWith('http') ? entry.website : 'https://' + entry.website %>" target="_blank" rel="noopener noreferrer" class="entry-website-link"><%= entry.name %></a>
+                        <% } else { %>
+                          <%= entry.name %>
+                        <% } %>
+                      </span>
+                      <span class="entry-date entry-timestamp" data-timestamp="<%= entry.timestamp %>"></span>
+                    </div>
+                    <p class="entry-message"><%= entry.message %></p>
+                  </article>
+                <% }); %>
+              <% } else { %>
+                <div class="guestbook-empty">
+                  <p>No one's signed yet. Be the first to leave your mark. :]</p>
+                </div>
+              <% } %>
+            </div>
+
+            <% if (totalPages && totalPages > 1) { %>
+              <div class="gb-pagination">
+                <% for (let i = 1; i <= totalPages; i++) { %>
+                  <button class="page-button<%= (currentPage || 1) == i ? ' active' : '' %>" data-page="<%= i %>"><%= i %></button>
+                <% } %>
+              </div>
+            <% } %>
+          </section>
+        </div>
+        <%- include('partials/sidebar', { blogs: blogs || [], commits: commits || [] }) %>
+      </main>
+      <%- include('partials/footer') %>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const messageInput = document.getElementById('message');
+        const charCounter = document.getElementById('messageCount');
+        if (messageInput && charCounter) {
+          messageInput.addEventListener('input', function () {
+            charCounter.textContent = this.value.length;
+            charCounter.style.color = this.value.length >= 85 ? 'var(--warning)' : 'var(--text-dim)';
+          });
+        }
+
+        document.querySelectorAll('.page-button').forEach(function (button) {
+          button.addEventListener('click', function () {
+            window.location.href = '/guestbook?page=' + this.getAttribute('data-page');
+          });
+        });
+      });
+    </script>
+    <%- include('partials/scripts') %>
+  </body>
+</html>

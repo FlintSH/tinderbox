@@ -1,0 +1,150 @@
+{
+  "excerpts": {
+    "fish-init": {
+      "path": "/home/flint/.config/fish/config.fish",
+      "sha256": "0add280a739ea61e567191b911735cff6e82162af8c1c3a2bd56566a32cf8122",
+      "lines": [
+        {
+          "line": 44,
+          "text": "# fl1nt.dev prompt (starship, brand-kit styled - see ~/.config/starship.toml)"
+        },
+        {
+          "line": 45,
+          "text": "if command -q starship"
+        },
+        {
+          "line": 46,
+          "text": "    starship init fish | source"
+        }
+      ]
+    },
+    "btop-selection": {
+      "path": "/home/flint/.config/btop/btop.conf",
+      "sha256": "694d3c081231a84b9d40ade32182e0785db24d39ad38fee314eebed9c7f74ad7",
+      "lines": [
+        {
+          "line": 5,
+          "text": "color_theme = \"/home/flint/.config/btop/themes/fl1nt.theme\""
+        },
+        {
+          "line": 8,
+          "text": "theme_background = true"
+        },
+        {
+          "line": 10,
+          "text": "#* Sets if 24-bit truecolor should be used, will convert 24-bit colors to 256 color (6x6x6 color cube) if false."
+        },
+        {
+          "line": 11,
+          "text": "truecolor = true"
+        }
+      ]
+    },
+    "nvim-theme": {
+      "path": "/home/flint/.config/nvim/init.lua",
+      "sha256": "99ab56c354bdccd06d0f0c2daaf38e13aee22b0e38b689c609355dba4879f0fa",
+      "lines": [
+        {
+          "line": 139,
+          "text": "    vim.cmd.colorscheme(\"catppuccin\")"
+        }
+      ]
+    },
+    "zed-theme": {
+      "path": "/home/flint/.config/zed/settings.json",
+      "sha256": "e49270dc91d42c49704733f8a4dafb065ec47fc71ff4ade4363d7a92fa216e1b",
+      "lines": [
+        {
+          "line": 28,
+          "text": "  \"ui_font_size\": 16,"
+        },
+        {
+          "line": 29,
+          "text": "  \"buffer_font_size\": 15,"
+        },
+        {
+          "line": 31,
+          "text": "    \"mode\": \"system\","
+        },
+        {
+          "line": 32,
+          "text": "    \"light\": \"One Light\","
+        },
+        {
+          "line": 33,
+          "text": "    \"dark\": \"Ayu Dark\""
+        }
+      ]
+    },
+    "lock-command": {
+      "path": "/home/flint/.config/hypr/hypridle.conf",
+      "sha256": "22727ca0ae0ce10c2ee44cb5a1aab0e6cfaf21d8c5d5aa31ade392088dae0f79",
+      "lines": [
+        {
+          "line": 8,
+          "text": "    lock_cmd = pidof hyprlock || hyprlock # runs hyprlock if it is not already running (this is always run when \"loginctl lock-session\" is called) "
+        },
+        {
+          "line": 9,
+          "text": "    # unlock_cmd = killall hyprlock # kills hyprlock when unlocking (this is always run when \"loginctl unlock-session\" is called)"
+        }
+      ]
+    },
+    "client-crt-override": {
+      "path": "/home/flint/Development/web/src/scripts/client.js",
+      "sha256": "10f34124588b28272a8c107d17bc4505d0dedcaf66727de7d9f8804ef7a8eb5a",
+      "lines": [
+        {
+          "line": 959,
+          "text": "    document.documentElement.style.setProperty('--main-color', '#ffa500');"
+        },
+        {
+          "line": 969,
+          "text": "    document.documentElement.style.setProperty('--main-color', 'red');"
+        }
+      ]
+    }
+  },
+  "source_build_comparison": {
+    "style-new": "Minified readable source equals local compiled bundle; observed 2026-09-20",
+    "crt": "Minified readable source equals local compiled bundle; observed 2026-09-20",
+    "origins": "Minified readable source equals local compiled bundle; observed 2026-09-20",
+    "hypersignal": "Minified readable source equals local compiled bundle; observed 2026-09-20"
+  },
+  "openrgb": {
+    "profile_name": "fl1nt",
+    "controllers": [
+      {
+        "name": "Corsair Vengeance RGB DDR5",
+        "mode": "Direct",
+        "packed_colors": [
+          16743558
+        ]
+      },
+      {
+        "name": "Corsair Vengeance RGB DDR5",
+        "mode": "Direct",
+        "packed_colors": [
+          16743558
+        ]
+      },
+      {
+        "name": "ASUS ROG STRIX X870-I GAMING WIFI",
+        "mode": "Direct",
+        "packed_colors": []
+      },
+      {
+        "name": "Razer Naga Pro V2 (Wireless)",
+        "mode": "Direct",
+        "packed_colors": [
+          16743558
+        ]
+      }
+    ]
+  },
+  "shared_assets": {
+    "/home/flint/Pictures/wallpapers/blue-bg.gif": "863a27bdb644ca03a9b0f720bd1deea0dab04ce2241d12ec427229a27d2f01b5",
+    "/home/flint/.config/waybar/fl1nt-logo.png": "e4b7993954bff4d6cdceaa1d720010a02141cbeed46141736dc316cedb79df1d"
+  },
+  "legcord_quick_css_bytes": 0
+}

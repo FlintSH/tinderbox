@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/metadata') %>
+  </head>
+  <body class="crt journal-page">
+    <div class="crt-glow"></div>
+    <div id="crt" class="crt">
+      <%- include('partials/header') %>
+      <%- include('partials/nav', { currentPage: 'journal' }) %>
+      <main class="content journal-layout">
+        <div class="journal-content-wrapper">
+
+          <% if (isAdmin) { %>
+            <div class="journal-admin-bar">
+              <span class="admin-tag"><span class="admin-dot"></span> Authenticated as FlintSH</span>
+              <div class="admin-actions">
+                <a class="journal-btn primary" href="/journal/new">+ New / Today's Entry</a>
+                <form action="/journal/logout" method="POST" class="inline-form">
+                  <input type="hidden" name="redirect" value="/journal" />
+                  <button class="journal-btn ghost" type="submit">Log out</button>
+                </form>
+              </div>
+            </div>
+          <% } %>
+
+          <section class="journal-hero">
+            <div class="hero-bar">
+              <span class="hero-dots" aria-hidden="true"><i class="hd r"></i><i class="hd y"></i><i class="hd g"></i></span>
+              <span class="hero-bar-title">~/journal.log</span>
+              <span class="cal-range" role="group" aria-label="Calendar range">
+                <a href="/journal?cal=3m" class="cal-range-btn <%= calendar.range === '3m' ? 'active' : '' %>">3M</a>
+                <a href="/journal?cal=6m" class="cal-range-btn <%= calendar.range === '6m' ? 'active' : '' %>">6M</a>
+                <a href="/journal?cal=1y" class="cal-range-btn <%= calendar.range === '1y' ? 'active' : '' %>">1Y</a>
+                <a href="/journal?cal=all" class="cal-range-btn <%= calendar.range === 'all' ? 'active' : '' %>">All</a>
+              </span>
+            </div>
+            <div class="hero-body">
+              <div class="hero-statline">
+                <span class="hero-stat streak"><strong><%= stats.currentStreak %></strong> day streak</span>
+                <span class="hero-stat"><strong><%= stats.totalEntries %></strong> entries</span>
+                <span class="hero-stat"><strong><%= stats.consistency %>%</strong> consistency</span>
+                <% if (stats.mood) { %>
+                  <span class="hero-stat">mood <strong class="<%= stats.mood.avgPleasantness >= 0 ? 'pos' : 'neg' %>"><%= stats.mood.avgPleasantness >= 0 ? '+' : '' %><%= stats.mood.avgPleasantness.toFixed(2) %></strong></span>
+                <% } %>
+                <% if (isAdmin) { %><a class="hero-write" href="/journal/new">+ write today</a><% } %>
+              </div>
+
+              <div class="cal-scroll">
+                <div class="cal-graph" style="--cal-weeks: <%= calendar.weeksToShow %>">
+                  <div class="cal-months">
+                    <% calendar.monthLabels.forEach(function (m) { %><span class="cal-month" style="grid-column: <%= m.col + 1 %>"><%= m.label %></span><% }); %>
+                  </div>
+                  <div class="cal-grid">
+                    <% calendar.weeks.forEach(function (week) { week.forEach(function (day) { %><% if (day.empty) { %><span class="cal-day empty"></span><% } else { %><a class="cal-day <% if (day.moodOnly) { %>mood-only<% } else if (day.logged) { %>lvl-<%= day.level %><% } else { %>lvl-0<% if (isAdmin) { %> unlogged<% } %><% } %>" href="/journal/<%= day.date %>" data-pretty="<%= day.pretty %>" data-logged="<%= day.logged ? '1' : '0' %>"<% if (day.moodOnly) { %> data-moodonly="1"<% } %><% if (day.moodP != null) { %> data-mood="<%= (day.moodP >= 0 ? '+' : '') + day.moodP.toFixed(2) %> / <%= ((day.moodE || 0) >= 0 ? '+' : '') + (day.moodE || 0).toFixed(2) %>"<% } %><% if (day.logged && !day.moodOnly) { %> data-words="<%= day.words %>" data-media="<%= day.media %>"<% } %> aria-label="<%= day.pretty %>"></a><% } %><% }); }); %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-foot">
+                <span class="hero-tagline">i aggregate a ton of data about my daily life here. its fun to track and use the data</span>
+                <span class="cal-legendwrap">
+                  <span class="cal-logged"><%= calendar.loggedDays %> logged</span>
+                  <span class="cal-legend">
+                    <span class="cal-legend-label">less</span>
+                    <span class="cal-day lvl-0 legend-cell"></span>
+                    <span class="cal-day lvl-1 legend-cell"></span>
+                    <span class="cal-day lvl-2 legend-cell"></span>
+                    <span class="cal-day lvl-3 legend-cell"></span>
+                    <span class="cal-day lvl-4 legend-cell"></span>
+                    <span class="cal-legend-label">more</span>
+                    <span class="cal-legend-sep">&middot;</span>
+                    <span class="cal-day mood-only legend-cell"></span>
+                    <span class="cal-legend-label">mood</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card journal-feed-section">
+            <div class="section-header">
+              <h2 class="section-title">// Entries</h2>
+              <div class="overview-info">
+                <span class="data-points"><%= entries.length %> day<%= entries.length === 1 ? '' : 's' %> on record</span>
+              </div>
+            </div>
+
+            <% if (entries.length === 0) { %>
+              <div class="journal-empty">
+                <p class="empty-message">The journal is empty so far.</p>
+                <% if (isAdmin) { %><a class="journal-btn primary" href="/journal/new">Write the first entry</a><% } %>
+              </div>
+            <% } else { %>
+              <div class="journal-posts">
+                <% entries.forEach(function(entry) { %>
+                  <article class="journal-post">
+                    <a class="post-link" href="/journal/<%= entry.date %>">
+                      <div class="post-body">
+                        <div class="post-head">
+                          <% if (entry.title !== entry.prettyDate) { %><span class="post-date"><%= entry.prettyDateShort %></span><% } %>
+                          <h3 class="post-title"><%= entry.title %></h3>
+                        </div>
+
+                        <% if (entry.moodPleasantness != null || entry.weatherHigh != null || entry.commitCount != null || entry.trackCount != null) { %>
+                          <div class="post-stats">
+                            <% if (entry.moodPleasantness != null) { %>
+                              <span class="ps-item" title="Mood (pleasantness / energy)"><span class="ps-k">mood</span><b class="<%= entry.moodPleasantness >= 0 ? 'pos' : 'neg' %>"><%= entry.moodPleasantness >= 0 ? '+' : '' %><%= entry.moodPleasantness.toFixed(2) %></b><span class="ps-slash">/</span><b class="<%= (entry.moodEnergy || 0) >= 0 ? 'pos' : 'neg' %>"><%= (entry.moodEnergy || 0) >= 0 ? '+' : '' %><%= (entry.moodEnergy || 0).toFixed(2) %></b></span>
+                            <% } %>
+                            <% if (entry.weatherHigh != null) { %>
+                              <span class="ps-item" title="NYC weather"><span class="ps-k">wx</span><b class="wx-<%= entry.weatherCategory || 'unknown' %>"><%= entry.weatherHigh %>&deg;</b><span class="ps-note"><%= entry.weatherCondition %></span></span>
+                            <% } %>
+                            <% if (entry.commitCount != null) { %>
+                              <span class="ps-item" title="GitHub commits"><span class="ps-k">commits</span><b><%= entry.commitCount %></b></span>
+                            <% } %>
+                            <% if (entry.trackCount != null) { %>
+                              <span class="ps-item" title="Scrobbles"><span class="ps-k">tracks</span><b><%= entry.trackCount.toLocaleString() %></b></span>
+                            <% } %>
+                          </div>
+                        <% } %>
+
+                        <div class="post-preview"><%- entry.previewHtml || '<span class=\"preview-empty\">No words yet.</span>' %></div>
+
+                        <div class="post-foot">
+                          <span><%= entry.wordCount %> words</span>
+                          <% if (entry.mediaCount > 0) { %><span class="foot-dot">&middot;</span><span><%= entry.mediaCount %> artifact<%= entry.mediaCount === 1 ? '' : 's' %></span><% } %>
+                          <span class="post-read">open entry &rarr;</span>
+                        </div>
+                      </div>
+
+                      <% if (entry.firstArtifact && entry.firstArtifact.src) { %>
+                        <div class="post-thumb">
+                          <% if (entry.firstArtifact.type === 'video') { %>
+                            <video src="<%= entry.firstArtifact.src %>" muted playsinline preload="metadata" <% if (entry.firstArtifact.poster) { %>poster="<%= entry.firstArtifact.poster %>"<% } %>></video>
+                            <span class="post-thumb-badge">video</span>
+                          <% } else { %>
+                            <img src="<%= entry.firstArtifact.src %>" alt="entry artifact" loading="lazy" />
+                          <% } %>
+                          <% if (entry.mediaCount > 1) { %><span class="post-thumb-count">+<%= entry.mediaCount - 1 %></span><% } %>
+                        </div>
+                      <% } %>
+                    </a>
+                  </article>
+                <% }); %>
+              </div>
+            <% } %>
+          </section>
+
+        </div>
+        <%- include('partials/sidebar', { blogs: blogs || [], commits: commits || [] }) %>
+      </main>
+      <%- include('partials/footer') %>
+    </div>
+
+    <script>
+      (function () {
+        var graph = document.querySelector('.cal-graph');
+        if (!graph) return;
+        var tip = document.createElement('div');
+        tip.className = 'cal-tooltip';
+        tip.style.display = 'none';
+        document.body.appendChild(tip);
+
+        function row(k, v) { return '<div class="tip-row"><span class="tip-k">' + k + '</span><span class="tip-v">' + v + '</span></div>'; }
+        function build(cell) {
+          var html = '<div class="tip-date">' + (cell.getAttribute('data-pretty') || '') + '</div>';
+          if (cell.getAttribute('data-logged') === '1') {
+            html += '<div class="tip-rows">';
+            if (cell.dataset.mood) html += row('mood', cell.dataset.mood);
+            if (cell.dataset.moodonly === '1') {
+              html += '<div class="tip-hint">mood only &middot; no entry</div>';
+            } else {
+              var media = (cell.dataset.media && cell.dataset.media !== '0') ? ' \u00b7 ' + cell.dataset.media + ' media' : '';
+              html += row('written', (cell.dataset.words || '0') + ' words' + media);
+            }
+            html += '</div>';
+          } else {
+            html += '<div class="tip-empty">No entry</div>';
+            if (cell.classList.contains('unlogged')) html += '<div class="tip-hint">click to log this day &rarr;</div>';
+          }
+          return html;
+        }
+        function place(cell) {
+          var r = cell.getBoundingClientRect();
+          var tr = tip.getBoundingClientRect();
+          var top = window.scrollY + r.top - tr.height - 8;
+          var left = window.scrollX + r.left + r.width / 2 - tr.width / 2;
+          var minLeft = window.scrollX + 8;
+          var maxLeft = window.scrollX + document.documentElement.clientWidth - tr.width - 8;
+          if (left < minLeft) left = minLeft;
+          if (left > maxLeft) left = maxLeft;
+          if (top < window.scrollY) top = window.scrollY + r.bottom + 8;
+          tip.style.top = top + 'px';
+          tip.style.left = left + 'px';
+        }
+        function show(cell) { tip.innerHTML = build(cell); tip.style.display = 'block'; place(cell); }
+        function hide() { tip.style.display = 'none'; }
+
+        graph.addEventListener('mouseover', function (e) { var c = e.target.closest('.cal-day'); if (c && !c.classList.contains('empty')) show(c); });
+        graph.addEventListener('mouseout', function (e) { if (e.target.closest('.cal-day')) hide(); });
+        graph.addEventListener('focusin', function (e) { var c = e.target.closest('.cal-day'); if (c && !c.classList.contains('empty')) show(c); });
+        graph.addEventListener('focusout', hide);
+        window.addEventListener('scroll', hide, { passive: true });
+      })();
+    </script>
+    <%- include('partials/scripts') %>
+  </body>
+</html>

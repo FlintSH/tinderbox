@@ -1,0 +1,59 @@
+[
+  {
+    "class": "nav-link ",
+    "font": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+    "fontSize": "14px",
+    "background": "rgba(134, 124, 255, 0.1)",
+    "color": "rgb(164, 153, 255)",
+    "border": "0px none rgb(164, 153, 255)",
+    "borderRadius": "4px",
+    "transform": "matrix(1, 0, 0, 1, 0, -1)",
+    "shadow": "none",
+    "textShadow": "none",
+    "transition": "0.15s"
+  },
+  {
+    "class": "filter-badge",
+    "font": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+    "fontSize": "10px",
+    "background": "rgba(134, 124, 255, 0.1)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgb(164, 153, 255)",
+    "borderRadius": "4px",
+    "transform": "matrix(1, 0, 0, 1, 0, -1)",
+    "shadow": "rgba(134, 124, 255, 0.4) 0px 0px 8px 0px",
+    "textShadow": "none",
+    "transition": "0.2s"
+  },
+  {
+    "class": "project-card featured ",
+    "font": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+    "fontSize": "14px",
+    "background": "rgba(134, 124, 255, 0.1)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(134, 124, 255, 0.5)",
+    "borderRadius": "8px",
+    "transform": "matrix(1, 0, 0, 1, 0, -2)",
+    "shadow": "rgba(134, 124, 255, 0.3) 0px 4px 20px 0px",
+    "textShadow": "none",
+    "transition": "0.2s"
+  },
+  {
+    "class": "",
+    "font": "\"Terminus (TTF)\", \"Space Mono\", monospace",
+    "fontSize": "11px",
+    "background": "rgb(134, 124, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgba(134, 124, 255, 0.3)",
+    "borderRadius": "4px",
+    "transform": "matrix(1, 0, 0, 1, 0, -1)",
+    "shadow": "none",
+    "textShadow": "none",
+    "transition": "0.2s"
+  },
+  {
+    "class": "gb-input",
+    "border": "1px solid rgb(134, 124, 255)",
+    "shadow": "rgba(134, 124, 255, 0.3) 0px 0px 8px 0px"
+  }
+]

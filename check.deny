@@ -1,0 +1,10 @@
+# Words scripts/check.sh refuses in the generic parts of this repo (skills,
+# plugin, scripts, router/core.md, docs, patches anyone installs). They belong
+# in router/personal/ instead. One extended regex per line; # starts a comment.
+# Forks: replace these with your own names, products and machines.
+\bFlint\b
+\bFlare\b
+\bPlanetry\b
+\bgreptileai\b
+\bT3 Code\b
+[0-9]-vCPU

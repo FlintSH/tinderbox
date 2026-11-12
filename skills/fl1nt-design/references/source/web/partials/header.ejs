@@ -1,0 +1,38 @@
+<header class="site-header">
+  <div class="header-grid">
+    <div id="logo" class="logo-section">
+      <div class="image-container">
+        <img src="/images/logo.png" alt="fl1nt.dev" class="main-logo" />
+      </div>
+      <div class="header-tagline">
+        <span class="typing-text">Software engineer & builder of things</span>
+      </div>
+    </div>
+    
+    <div class="status-grid">
+      <div class="status-item">
+        <span class="label">STATUS</span>
+        <span class="value status-indicator" data-status="<%= status ? status.toLowerCase() : '' %>"><%= status %></span>
+      </div>
+      <div class="status-item">
+        <span class="label">LOCAL TIME</span>
+        <span class="value" id="pittsburghTime">00:00:00</span>
+      </div>
+      <div class="status-item">
+        <span class="label">TEMP</span>
+        <span class="value" id="pittsburghTemperature"><%= pittsburghTemperature %>°F / <%= Math.round((pittsburghTemperature - 32) * 5/9) %>°C</span>
+      </div>
+      <div class="status-item">
+        <span class="label">MOOD</span>
+        <span class="value">
+          <a href="/journal" style="color: <%= mood.pleasantness > 0 ? '#4ade80' : mood.pleasantness < 0 ? '#ef4444' : '#6b7280' %>"><%= mood.pleasantness >= 0 ? '+' : '' %><%= mood.pleasantness.toFixed(2) %></a>
+          <span> / </span>
+          <a href="/journal" style="color: <%= mood.energy > 0 ? '#4ade80' : mood.energy < 0 ? '#ef4444' : '#6b7280' %>"><%= mood.energy >= 0 ? '+' : '' %><%= mood.energy.toFixed(2) %></a>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+    </div>
+  </body>
+</html> 

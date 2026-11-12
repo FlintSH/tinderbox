@@ -1,0 +1,61 @@
+{
+  "_about": "Copy to <project>/.agent-artifacts/visual-polish/config.json and edit. Paths are relative to this file. See references/config.md for every field.",
+  "baseUrl": "http://127.0.0.1:3101",
+  "out": ".",
+  "src": ["app", "components", "lib", "styles"],
+
+  "storageState": "auth.json",
+  "login": {
+    "steps": [
+      { "goto": "/login" },
+      { "fill": ["input[name=username]", "demo"] },
+      { "fill": ["input[type=password]", "demo-password-local-only"] },
+      { "click": "button[type=submit]" },
+      { "waitFor": "nav" }
+    ]
+  },
+
+  "routes": [
+    { "name": "landing", "path": "/" },
+    { "name": "dashboard", "path": "/dashboard" },
+    { "name": "files", "path": "/dashboard/files" },
+    { "name": "files-empty", "path": "/dashboard/files?search=no-such-file-xyz" },
+    { "name": "settings", "path": "/dashboard/settings" },
+    { "name": "upload-dialog", "path": "/dashboard", "actions": [ { "click": "text=Upload" }, { "waitFor": "[role=dialog]" } ] },
+    { "name": "user-menu", "path": "/dashboard", "actions": [ { "click": "[aria-label='Open user menu']" }, { "wait": 300 } ] },
+    { "name": "login-error", "path": "/login", "actions": [ { "fill": ["input[name=username]", "nobody"] }, { "fill": ["input[type=password]", "wrong"] }, { "click": "button[type=submit]" }, { "wait": 800 } ] }
+  ],
+
+  "states": [
+    { "name": "dark", "colorScheme": "dark", "localStorage": { "theme": "dark" } },
+    { "name": "light", "colorScheme": "light", "localStorage": { "theme": "light" } },
+    { "name": "custom-accent", "colorScheme": "dark", "localStorage": { "theme": "dark" }, "css": "states/custom-accent.css" }
+  ],
+
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900 },
+    { "name": "mobile", "width": 390, "height": 844, "mobile": true }
+  ],
+
+  "hide": ["nextjs-portal", "[data-nextjs-toast]"],
+  "mask": ["[data-relative-time]", "img[alt='avatar']"],
+  "expand": [],
+
+  "crops": [
+    { "name": "sidebar", "selector": "aside" },
+    { "name": "header", "selector": "header" }
+  ],
+  "autoCrops": {
+    "selectors": ["button", "input, select, textarea", "[role=tab]", "[role=dialog]", "table", "[data-slot=card], .card"],
+    "maxPerSelector": 4,
+    "minSize": 12
+  },
+
+  "audit": {
+    "hide": [],
+    "ignore": []
+  },
+
+  "waitMs": 800,
+  "maxPageHeight": 16000
+}

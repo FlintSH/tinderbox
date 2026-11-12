@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/metadata') %>
+  </head>
+  <body class="crt">
+    <div class="crt-glow"></div>
+    <div id="crt" class="crt">
+      <%- include('partials/header') %>
+      <%- include('partials/nav', { currentPage: 'about' }) %>
+      <main class="content about-layout">
+        <div class="about-content-wrapper">
+          <section class="terminal-intro">
+            <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+              </div>
+              <span class="terminal-title">about_flint.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">fl1nt@dev:~$</span>
+                <span class="command">whoami --verbose</span>
+              </div>
+              <div class="terminal-output">
+                <div class="user-info">
+                  <div class="avatar-section">
+                    <div class="image-container">
+                      <img src="/images/avatarv3-og.png" alt="FlintSH Avatar" />
+                    </div>
+                    <div class="status-indicators">
+                      <span class="indicator online">●</span> <span class="status-indicator">Online</span>
+                    </div>
+                  </div>
+                  <div class="info-grid">
+                    <div class="info-item">
+                      <span class="label">name:</span>
+                      <span class="value">Zach Lowery (FlintSH)</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">age:</span>
+                      <span class="value">23</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">location:</span>
+                      <span class="value">New York City, NY</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">occupation:</span>
+                      <span class="value">Software Engineer @ Scale AI</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">passion:</span>
+                      <span class="value">I have strong passions for the internet, AI, and the future of our world.</span>
+                    </div>
+           
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="story-section">
+          <div class="section-card narrative-card">
+            <h2 class="section-title">// Little bit about me</h2>
+            <div class="story-content">
+              <p>
+                hey there, I'm <strong>Zach Lowery</strong>, otherwise known as <strong>FlintSH</strong> all over the web. I'm 23
+                years old and grew up in Pittsburgh, Pennsylvania. I now live in New York City. I tend to think of myself as a bit of a nomad - but maybe that's being idealistic. I love to travel and I don't think there's anything more valuable in life than experiences.
+              </p>
+              <p>
+                I'm a very connected person and am super passionate about the web. If I'm not coding or at work, I'm probably either tinkering with my linux setup, listening to music, or interacting with niche online communities. You can almost always find me on <a href="https://discord.gg/QaQ74W6Rm3" target="_blank" class="glow-link">Discord</a>. I think the internet is one of the most wonderful things we have ever created, and I'm proud to be a part of it.
+              </p>
+              <p>
+                At work, I'm a software engineer at <strong>Scale AI</strong>. I don't hold a degree in computer science, but I spent my whole upbringing writing code. I was offered the job after making an open source tool that makes it easier to use their data production platform, Outlier. I love what I do at work and I'm genuinely grateful that I get to work in AI.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="website-section">
+          <div class="section-card narrative-card">
+            <h2 class="section-title">// About this website</h2>
+            <div class="story-content">
+              <p>
+                This website is truly my pride and joy and center of my online presence. I first created it back in <strong>2022</strong> after falling in love with the retro aesthetic of the web, but completely remade it from the ground up in <strong>2025</strong> after gaining a ton of new experience and inspiration.
+              </p>
+              <p>
+                What makes this site special to me is that it's <strong>100% coded from scratch</strong>. No web frameworks, no external libraries, just pure HTML, CSS, and JavaScript. The entire stack runs on <strong>Bun</strong> using its native HTTP and WebSocket modules. I wanted to push the boundaries and see how far I could take handing everything from scratch.
+              </p>
+              <p>
+                I wanted to emphasize that this isn't just a portfolio, but also a statement. It's my main creative outlet, and a place that I hope inspires you to make your own website too. I think the world would be a better place if more people had a place to call their own. I sprinkled as much of *me* into it as I could. Come along for the ride, and make sure to sign the <a href="/guestbook" target="_blank" class="glow-link">guestbook</a>!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="favorites-grid">
+          <div class="section-card favorites-card combined-favorites">
+            <div class="card-header">
+              <h3 class="card-title">Favorite Music & Games</h3>
+            </div>
+            <div class="favorites-content">
+              <div class="favorites-columns">
+                <div class="favorites-column">
+                  <h4 class="column-title">Music</h4>
+                                      <div class="favorites-list">
+                      <div class="list-item">Jeremy Soule</div>
+                      <div class="list-item">Flume</div>
+                      <div class="list-item">C418</div>
+                      <div class="list-item">Lena Raine</div>
+                      <div class="list-item">Carpenter Brut</div>
+                      <div class="list-item">Vocaloid</div>
+                      <div class="list-item">Classical</div>
+                      <div class="list-item">Final Fantasy OSTs</div>
+                      <div class="list-item">Re-Logic</div>
+                      <div class="list-item">Rémi Gallego</div>
+                      <div class="list-item">Apashe</div>
+                      <div class="list-item">EDM, DnB, House</div>
+                      <div class="list-item">Home</div>
+                      <div class="list-item special">+ billion game soundtracks</div>
+                    </div>
+                </div>
+                <div class="favorites-column">
+                  <h4 class="column-title">Games</h4>
+                  <div class="favorites-list">
+                    <div class="list-item">Minecraft</div>
+                    <div class="list-item">Final Fantasy</div>
+                    <div class="list-item">The Witcher</div>
+                    <div class="list-item">Rust</div>
+                    <div class="list-item">Garry's Mod</div>
+                    <div class="list-item">Cave Story</div>
+                    <div class="list-item">League of Legends</div>
+                    <div class="list-item">Zelda</div>
+                    <div class="list-item">Terraria</div>
+                    <div class="list-item">Stardew Valley</div>
+                    <div class="list-item">Satisfactory</div>
+                    <div class="list-item">Celeste</div>
+                    <div class="list-item">Wizard101</div>
+                    <div class="list-item special">+ ton of other random games</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+        <%- include('partials/sidebar', { blogs: blogs || [], commits: commits || [] }) %>
+      </main>
+      <%- include('partials/footer') %>
+    </div>
+    <%- include('partials/scripts') %>
+  </body>
+</html> 
+</html> 
