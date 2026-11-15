@@ -16,6 +16,10 @@ Current task instructions and repository guidance override these defaults.
   Use disposable data and label simulations honestly. If capture or upload is
   blocked, report it and leave evidence explicitly incomplete. Derive coverage
   from the changed flows.
+- When you create UI, or are asked to clean up a screen's content, use the
+  `ui-content` skill before building and again on the rendered result: what
+  goes on the screen, in what order, in which words. Don't trim existing
+  content unasked.
 - Always preserve product identity. An uplift is not a wholesale redesign.
 - Use an isolated worktree per task, or an explicitly agreed shared-worktree
   ownership plan. Don't touch other agents' files or background processes.

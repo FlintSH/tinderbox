@@ -1,6 +1,6 @@
 {
   "name": "tinderbox",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "End-to-end task delivery with worktree isolation, headless visual evidence, PR and review follow-through, rendered-media QA and resumable handoffs.",
   "author": {"name": "FlintSH"},
   "homepage": "https://github.com/FlintSH/tinderbox",

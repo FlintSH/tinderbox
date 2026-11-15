@@ -31,6 +31,10 @@ Project Playwright tests remain the source of durable regression coverage.
 - Capture both a clean baseline and the changed behavior when feasible. Use
   viewport captures for fixed/viewport-relative gradients; do not let full-page
   capture artifacts masquerade as product bugs.
+- For new or rewritten screens, read every string in the screenshots, not only
+  the layout. If the `ui-content` skill is installed, put each one through its
+  test: what leads the page, labels that restate the obvious, text nobody
+  would miss.
 - Inspect browser console errors, failed network requests and response codes.
   A page that merely loads is not proof its backend interactions work.
 - For Electron, test renderer behavior headlessly where possible and separately

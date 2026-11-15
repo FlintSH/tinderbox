@@ -3,6 +3,6 @@
   "description": "FlintSH's tinderbox: delivery, visual QA, PR follow-through and media QA skills for Claude Code and Codex",
   "owner": {"name": "FlintSH"},
   "plugins": [
-    {"name": "tinderbox", "source": "./plugins/tinderbox", "description": "End-to-end task delivery, headless visual evidence, PR follow-through and media QA, with pstack playbook routing", "version": "2.0.0"}
+    {"name": "tinderbox", "source": "./plugins/tinderbox", "description": "End-to-end task delivery, headless visual evidence, PR follow-through and media QA, with pstack playbook routing", "version": "2.1.0"}
   ]
 }

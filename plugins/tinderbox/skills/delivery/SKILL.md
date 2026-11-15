@@ -36,6 +36,9 @@ personal specifics (machine limits, products, review bots, voice); follow them.
 - Prefer the repository's test and build commands. Add meaningful regression
   coverage for behavior changes, then test affected integrations. For UI work,
   use `visual-qa` without being reminded.
+- When you create UI, or are asked to clean up a screen's content, use the
+  `ui-content` skill if it is installed: a content plan before building, then
+  a read of every string on the rendered screen. It ships outside this plugin.
 - Parallelize independent research and edits when useful, with clear ownership.
   Size concurrency to the machine: check CPU and memory before running more than
   one heavy build or render, or more than two browser sessions. Do not

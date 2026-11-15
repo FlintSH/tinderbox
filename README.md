@@ -29,7 +29,7 @@ every task goes through the same four layers. the rules load first, the router f
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/flow-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/flow-light.svg">
-  <img alt="How a task flows through tinderbox, in four layers. 1, always loaded: CLAUDE.md, AGENTS.md, pstack-models.md. 2, router: delivery, which hands off to pr-follow-through, render-qa, visual-qa. 3, method: pstack playbooks, tstack, fl1nt-design, visual-polish-loop. 4, domain kits: vercel-react-best-practices, vercel-composition-patterns, web-design-guidelines, untangle-codebase." src="assets/readme/flow-light.svg">
+  <img alt="How a task flows through tinderbox, in four layers. 1, always loaded: CLAUDE.md, AGENTS.md, pstack-models.md. 2, router: delivery, which hands off to pr-follow-through, render-qa, visual-qa. 3, method: pstack playbooks, tstack, fl1nt-design, ui-content, visual-polish-loop. 4, domain kits: vercel-react-best-practices, vercel-composition-patterns, web-design-guidelines, untangle-codebase." src="assets/readme/flow-light.svg">
 </picture>
 
 - **always loaded:** the global rules every session starts with, for both claude code and codex.
@@ -41,22 +41,23 @@ every task goes through the same four layers. the rules load first, the router f
 
 | | skills |
 | --- | --: |
-| **mine** · [skills/](skills) | 2 |
+| **mine** · [skills/](skills) | 3 |
 | **tinderbox plugin** · [plugins/tinderbox/](plugins/tinderbox) | 4 |
 | **Vercel** · [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) @ `063bee9` | 3 |
 | **untangle-codebase** · [caldoai/skills](https://github.com/caldoai/skills) @ `f3cf477` | 1 |
 | **tstack** · [t3dotgg/tstack](https://github.com/t3dotgg/tstack) @ `1085050`, patched | 9 |
 | **pstack** · [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) @ `6b03002` | 58 |
-| **total** | **77** |
+| **total** | **78** |
 
 <details>
-<summary><b>every skill, with descriptions</b> (77)</summary>
+<summary><b>every skill, with descriptions</b> (78)</summary>
 
 **mine**
 
 | skill | what it does |
 | --- | --- |
 | [fl1nt-design](skills/fl1nt-design/SKILL.md) | Apply the fl1nt.dev personal brand to interfaces, websites, desktop themes, graphics, documents, and other artifacts using verified website and rice evidence. Use when the user asks for fl1nt.dev branding, the fl1nt design language, or consistency with Flint's rice; do not apply merely because a project belongs to Flint. |
+| [ui-content](skills/ui-content/SKILL.md) | Decide what goes on a screen, in what order, and in which words. Use automatically whenever you create UI (landing pages, docs sites, app screens, forms, dialogs, navigation) and whenever you are asked to clean up, tighten or rewrite the content of existing UI. Run it before building and again on the rendered result. It catches metadata and preamble ahead of the thing the page is for, labels and helper text that restate the obvious, slogan headings, pages where nothing leads, repeated content, and mock-ups standing in for the real product. Not for visual design. |
 | [visual-polish-loop](skills/visual-polish-loop/SKILL.md) | Run a recursive, evidence-driven visual polish loop on a web UI. Audit every page, theme and state against a quality bar (palette, contrast, surfaces, typography, spacing, component states, focus), prototype genuinely different directions on the real pages, implement the winner through design tokens, then capture, have independent reviewers scrutinize, fix and repeat until a round comes back clean, and deliver a PR with before/after evidence and metrics. Use this whenever someone asks to polish, refine, clean up, unify, uplift or "make seamless" a UI, theme, palette or colour system, close a quality gap between two themes or screens, do a design or finish pass with high scrutiny, or says "visual clean loop" / "visual polish loop", even if they only mention colours or say it "doesn't feel as polished as" something. Not for building new features or single-bug visual fixes. |
 
 **tinderbox plugin**
