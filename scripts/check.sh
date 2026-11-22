@@ -41,7 +41,7 @@ if [ -f check.deny ]; then
   words="$(sed -e 's/[[:space:]]*#.*//' -e '/^$/d' check.deny | paste -sd'|' -)"
   [ -n "$words" ] && deny="$deny|$words"
 fi
-if git ls-files --cached --others --exclude-standard -z -- plugins skills scripts router/core.md router/claude-rules router/codex \
+if git ls-files --cached --others --exclude-standard -z -- plugins skills scripts router/core.md router/claude-rules router/codex router/antigravity \
   docs upstream/pstack-codex upstream/patches upstream/overlays \
   ':!skills/fl1nt-design' ':!skills/visual-polish-loop/references/worked-example.md' \
   ':!skills/visual-polish-loop/references/directions.md' ':!upstream/patches/personal' \

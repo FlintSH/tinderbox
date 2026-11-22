@@ -29,7 +29,8 @@ flock -n 9 || { echo "another autosync is running"; exit 0; }
 # harness-managed skill folders refresh on their own and are not watched.
 watch=()
 for p in "$HOME/.agents/skills" "$HOME/.claude/skills" "$HOME/.codex/skills" \
-  "$HOME/.claude/CLAUDE.md" "$HOME/.codex/AGENTS.md" "$HOME/.claude/rules" "${TINDERBOX_PLUGIN_SRC:-}"; do
+  "$HOME/.claude/CLAUDE.md" "$HOME/.codex/AGENTS.md" "$HOME/.claude/rules" \
+  "$HOME/.gemini/config/pstack-models.md" "$HOME/.gemini/config/pstack-antigravity.md" "${TINDERBOX_PLUGIN_SRC:-}"; do
   if [ -n "$p" ] && [ -e "$p" ]; then watch+=("$p"); fi
 done
 newest=""

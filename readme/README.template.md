@@ -72,6 +72,8 @@ scripts/install.sh --all
 # optional: tinderbox defaults as a block in ~/.claude/CLAUDE.md and
 # ~/.codex/AGENTS.md (your own rules there are kept)
 scripts/install.sh --router
+# optional: the same setup for Antigravity (agy) in ~/.gemini/config
+scripts/install.sh --antigravity
 ```
 
 {{install-notes}}

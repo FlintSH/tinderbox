@@ -139,6 +139,8 @@ scripts/install.sh --all
 # optional: tinderbox defaults as a block in ~/.claude/CLAUDE.md and
 # ~/.codex/AGENTS.md (your own rules there are kept)
 scripts/install.sh --router
+# optional: the same setup for Antigravity (agy) in ~/.gemini/config
+scripts/install.sh --antigravity
 ```
 
 skills install to `~/.agents/skills` (codex) and symlinks them to `~/.claude/skills` (claude code). Anything the installer replaces will move to `~/.local/share/tinderbox/backup/<timestamp>/`. routing details are in [docs/ROUTING.md](docs/ROUTING.md).

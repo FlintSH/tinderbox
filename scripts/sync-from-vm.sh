@@ -88,6 +88,10 @@ for f in "$ROOT"/router/claude-rules/*.md; do
   src="$H/.claude/rules/$(basename "$f")"; if [ -f "$src" ]; then cp "$src" "$f"; fi
 done
 if [ -f "$H/.codex/pstack-models.md" ]; then cp "$H/.codex/pstack-models.md" "$ROOT/router/codex/pstack-models.md"; fi
+mkdir -p "$ROOT/router/antigravity"
+for f in pstack-models.md pstack-antigravity.md; do
+  if [ -f "$H/.gemini/config/$f" ]; then cp "$H/.gemini/config/$f" "$ROOT/router/antigravity/$f"; fi
+done
 # Patches go back where they already live: upstream/patches/personal/ for
 # opt-in personal ones, upstream/patches/ otherwise.
 if [ -n "$PATCH_SRC" ]; then

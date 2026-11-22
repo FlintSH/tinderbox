@@ -46,6 +46,7 @@ repo autosync pushes to.
 | the tinderbox block in `~/.claude/CLAUDE.md` / `~/.codex/AGENTS.md` | `router/core.md` |
 | everything else in that file, only when `TINDERBOX_PERSONAL` is set | `router/personal/$TINDERBOX_PERSONAL.md` |
 | rule files tinderbox ships (`router/claude-rules/*.md`), `~/.codex/pstack-models.md` | `router/claude-rules/`, `router/codex/` |
+| `~/.gemini/config/pstack-models.md`, `~/.gemini/config/pstack-antigravity.md` (Antigravity) | `router/antigravity/` |
 | enabled plugins, marketplaces, MCP server names | `upstream/installed.json` |
 
 Skills are discovered, so a skill a model writes into `~/.agents/skills` shows

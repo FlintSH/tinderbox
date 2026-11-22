@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install tinderbox into Claude Code (~/.claude) and Codex (~/.agents, ~/.codex).
+# Install tinderbox into Claude Code (~/.claude), Codex (~/.agents, ~/.codex) and Antigravity (~/.gemini).
 #
 #   scripts/install.sh --skills     tinderbox's own skills: real copies in ~/.agents/skills, symlinks in ~/.claude/skills
 #   scripts/install.sh --upstream   Pinned third-party git skills from upstream/sources.json
@@ -7,8 +7,9 @@
 #   scripts/install.sh --plugin     the tinderbox plugin (delivery, visual-qa, pr-follow-through, render-qa) for Claude Code and Codex
 #   scripts/install.sh --pstack     pstack for Claude Code (cursor/plugins) and Codex (built locally), plus model sheets
 #   scripts/install.sh --router     router/core.md as a managed block in ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md; your own rules stay
+#   scripts/install.sh --antigravity  Antigravity (agy): skill symlinks, the router block, pstack sheets and Context7 in ~/.gemini/config
 #   scripts/install.sh --autosync   systemd user timer that pushes live changes back here (scripts/autosync.sh)
-#   scripts/install.sh --all        everything except --router and --autosync
+#   scripts/install.sh --all        everything except --router, --antigravity and --autosync
 #   add --dry-run to print actions without changing anything
 #
 # Files in upstream/overlays/<skill>/ are copied over that skill after install.
@@ -19,19 +20,20 @@ STATE="${HOME}/.local/share/tinderbox"
 BACKUP="$STATE/backup/$(date +%Y%m%d-%H%M%S)"
 AGENTS_SKILLS="${HOME}/.agents/skills"
 CLAUDE_SKILLS="${HOME}/.claude/skills"
-DRY=0; DO_SKILLS=0; DO_UP=0; DO_PLUGIN=0; DO_PSTACK=0; DO_ROUTER=0; DO_AUTOSYNC=0
+DRY=0; DO_SKILLS=0; DO_UP=0; DO_PLUGIN=0; DO_PSTACK=0; DO_ROUTER=0; DO_AUTOSYNC=0; DO_AGY=0
 
 for a in "$@"; do
   case "$a" in
     --skills) DO_SKILLS=1 ;; --upstream) DO_UP=1 ;; --plugin) DO_PLUGIN=1 ;;
     --pstack) DO_PSTACK=1 ;; --router) DO_ROUTER=1 ;; --autosync) DO_AUTOSYNC=1 ;;
+    --antigravity) DO_AGY=1 ;;
     --dry-run) DRY=1 ;;
     --all) DO_SKILLS=1; DO_UP=1; DO_PLUGIN=1; DO_PSTACK=1 ;;
-    -h|--help) sed -n 2,15p "$0"; exit 0 ;;
+    -h|--help) sed -n 2,16p "$0"; exit 0 ;;
     *) echo "unknown option: $a" >&2; exit 2 ;;
   esac
 done
-[ $((DO_SKILLS+DO_UP+DO_PLUGIN+DO_PSTACK+DO_ROUTER+DO_AUTOSYNC)) -gt 0 ] || { sed -n 2,15p "$0"; exit 2; }
+[ $((DO_SKILLS+DO_UP+DO_PLUGIN+DO_PSTACK+DO_ROUTER+DO_AUTOSYNC+DO_AGY)) -gt 0 ] || { sed -n 2,16p "$0"; exit 2; }
 
 run() { echo "+ $*"; [ "$DRY" = 1 ] || "$@"; }
 
@@ -128,6 +130,51 @@ if [ "$DO_ROUTER" = 1 ]; then
   python3 "$ROOT/scripts/router.py" install "$ROOT/router/core.md" "${HOME}/.claude/CLAUDE.md" "${HOME}/.codex/AGENTS.md" \
     --backup "$BACKUP" $([ "$DRY" = 1 ] && echo --dry-run)
   echo "  router/personal/ holds example personal layers; they are not installed."
+fi
+
+if [ "$DO_AGY" = 1 ]; then
+  command -v python3 >/dev/null || { echo "python3 is required for --antigravity" >&2; exit 1; }
+  # Antigravity reads global skills from ~/.gemini/config/skills and has no manual-only flag, so
+  # link the auto-routable skills there and leave pstack to be read by path (see the adapter).
+  # Links, not copies: edits to the live skills show up without a reinstall.
+  AGY="${HOME}/.gemini/config"; AGY_SKILLS="$AGY/skills"
+  if [ -f "${HOME}/.config/tinderbox/env" ]; then . "${HOME}/.config/tinderbox/env"; fi
+  PLUGIN_SKILLS="${TINDERBOX_PLUGIN_SRC:-$ROOT}/plugins/tinderbox/skills"
+  run mkdir -p "$AGY_SKILLS"
+  declare -A agy_seen=()
+  for d in "$PLUGIN_SKILLS"/*/ "$AGENTS_SKILLS"/*/ "$CLAUDE_SKILLS"/*/; do
+    d="${d%/}"; name="$(basename "$d")"
+    [ -f "$d/SKILL.md" ] || continue
+    [ "$name" = synced ] && continue
+    [ -n "${agy_seen[$name]:-}" ] && continue
+    agy_seen[$name]=1
+    target="$(readlink -f "$d")"
+    [ "$(readlink -f "$AGY_SKILLS/$name" 2>/dev/null)" = "$target" ] && continue
+    stash "$AGY_SKILLS/$name"
+    run ln -s "$target" "$AGY_SKILLS/$name"
+  done
+  # Global rules: the same managed block as CLAUDE.md and AGENTS.md; your own rules below it stay.
+  python3 "$ROOT/scripts/router.py" install "$ROOT/router/core.md" "$AGY/AGENTS.md" \
+    --backup "$BACKUP" $([ "$DRY" = 1 ] && echo --dry-run)
+  for f in pstack-models.md pstack-antigravity.md; do
+    if ! cmp -s "$ROOT/router/antigravity/$f" "$AGY/$f"; then stash "$AGY/$f"; run cp "$ROOT/router/antigravity/$f" "$AGY/$f"; fi
+  done
+  # Context7 over stdio when its local server is installed. Other servers in the file stay.
+  if C7="$(command -v context7-mcp)"; then
+    echo "+ add context7 ($C7) to $AGY/mcp_config.json"
+    [ "$DRY" = 1 ] || python3 -c '
+import json, os, sys
+path, cmd = sys.argv[1], sys.argv[2]
+text = open(path).read() if os.path.exists(path) else ""
+data = json.loads(text) if text.strip() else {}
+data.setdefault("mcpServers", {}).setdefault("context7", {"command": cmd, "args": []})
+with open(path, "w") as f:
+    json.dump(data, f, indent=2); f.write("\n")
+' "$AGY/mcp_config.json" "$C7"
+  else
+    echo "! context7-mcp is not on PATH; skipping Context7 for Antigravity"
+  fi
+  command -v agy >/dev/null || echo "  agy is not on PATH. Install it: curl -fsSL https://antigravity.google/cli/install.sh | bash"
 fi
 
 if [ "$DO_AUTOSYNC" = 1 ]; then
