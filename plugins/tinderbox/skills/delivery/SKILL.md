@@ -60,8 +60,13 @@ Resolve `<pstack>` for your harness:
 - Codex: `ls -d ~/.codex/plugins/cache/tinderbox-pstack/pstack/*/ | sort -V | tail -1`.
   Adapter `<pstack>/docs/harness/codex.md`. Model sheet
   `~/.codex/pstack-models.md`; read it before spawning a role model.
+- Antigravity: no pstack plugin of its own; read the adapter
+  `~/.gemini/config/pstack-antigravity.md` first; it resolves `<pstack>` from
+  the Codex or Claude Code copy. Model sheet `~/.gemini/config/pstack-models.md`;
+  read it before spawning a role model. Worktrees: the subagent `branch`
+  option, or `git worktree add`.
 
-If neither path exists, pstack is not installed: work without it.
+If none of these paths exists, pstack is not installed: work without it.
 
 | Task shape | Read and follow |
 | --- | --- |
