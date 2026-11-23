@@ -1,18 +1,21 @@
 --- a/council/SKILL.md
 +++ b/council/SKILL.md
-@@ -10,16 +10,15 @@
- fixes until reviews return. If the user wants to discard the implementation
+@@ -11,15 +11,19 @@
  and explore new ideas, skip fixes to code being replaced.
  
--Bring in three delegates to help with the user's request, usually for review
+ Bring in three delegates to help with the user's request, usually for review
 -or feedback. Use one strong model from each of three different providers, at
 -high reasoning effort. If the user's instructions name council members, use
 -those. Otherwise pick the latest flagship model from each provider, for
 -example Claude Opus, GPT Sol, and Gemini Pro.
-+Bring in two delegates to help with the user's request, usually for review
-+or feedback: Claude Opus 5.5 and GPT-6.1 Sol (T3 ids `claude-opus-5-5` and
-+`gpt-6.1-sol`), both at high reasoning effort. If the user names other council
-+members for a request, use those.
++or feedback:
++
++- Claude Opus 5.5 (T3 id `claude-opus-5-5`), high reasoning effort.
++- GPT-6.2 Sol (T3 id `gpt-6.2-sol`), high reasoning effort.
++- Gemini 4 Neon (T3 id `gemini-4-neon`) on the Antigravity provider
++  (`providerInstanceId` `antigravity`), `thinking_level` high.
++
++If the user names other council members for a request, use those.
  
  In T3 Code, use `orchestrator_capabilities` to resolve the models, then
  `delegate_task` to start one delegate per model in parallel. Elsewhere, use
@@ -23,7 +26,7 @@
  
  Give each delegate the request and relevant context. For review or feedback,
  keep their work read-only. Collect their responses and summarize the useful
-@@ -39,9 +38,8 @@
+@@ -39,9 +43,9 @@
  
  | Delegate | Round 1 | Round 2 |
  | --- | --- | --- |
@@ -31,7 +34,8 @@
 -| GPT Sol | 8/10 | 10/10 |
 -| Gemini Pro | 7/10 | 9/10 |
 +| Claude Opus 5.5 | 7/10 | 9/10 |
-+| GPT-6.1 Sol | 8/10 | 10/10 |
++| GPT-6.2 Sol | 8/10 | 10/10 |
++| Gemini 4 Neon | 7/10 | 9/10 |
  ```
  
  If a delegate gives no score, write `no score`. Do not invent one.
