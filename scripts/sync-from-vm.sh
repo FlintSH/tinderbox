@@ -12,9 +12,10 @@
 #
 # Skills are discovered, not listed: any folder with a SKILL.md in
 # ~/.agents/skills, ~/.claude/skills or ~/.codex/skills is copied to skills/,
-# unless it is third-party (named in upstream/sources.json) or listed in
-# sync.ignore or ~/.config/tinderbox/sync.ignore (one name per line, # comments).
-# Skills missing from this machine are reported, never deleted.
+# unless it is listed in sync.ignore or ~/.config/tinderbox/sync.ignore (one
+# name per line, # comments). A third-party skill (named in
+# upstream/sources.json) is copied only while it differs from its pinned
+# upstream. Skills missing from this machine are reported, never deleted.
 #
 # The global instruction files hold the tinderbox block (router/core.md) and,
 # around it, your own rules (router/personal/<name>.md, only when opted in).
@@ -46,10 +47,11 @@ for src in d.get("skills", []):
         print(s if isinstance(s, str) else s["name"])
 PY
 )"
+skip_local=""
 for f in "$ROOT/sync.ignore" "$H/.config/tinderbox/sync.ignore"; do
-  [ -f "$f" ] && skip+=$'\n'"$(sed -e 's/#.*//' -e 's/[[:space:]]*$//' "$f" | grep -v '^$' || true)"
+  [ -f "$f" ] && skip_local+=$'\n'"$(sed -e 's/#.*//' -e 's/[[:space:]]*$//' "$f" | grep -v '^$' || true)"
 done
-skip+=$'\n'"synced"$'\n'".system"
+skip+="$skip_local"$'\n'"synced"$'\n'".system"
 
 declare -A seen=()
 for r in "${SKILL_ROOTS[@]}"; do
@@ -64,6 +66,43 @@ for r in "${SKILL_ROOTS[@]}"; do
     copy_dir "$d" "$ROOT/skills/$name"
   done
 done
+# Pinned third-party skills you have changed are published too: the live copy
+# goes to skills/<name> when it differs from the pinned upstream (plus any
+# overlay), and skills/<name> is removed once it matches upstream again. If
+# upstream cannot be read, skills/<name> is left as it is.
+while read -r src pin name path; do
+  [ -n "$name" ] || continue
+  grep -qxF -- "$name" <<<"$skip_local" && continue
+  live=""
+  for r in "${SKILL_ROOTS[@]}"; do [ -f "$r/$name/SKILL.md" ] && { live="$r/$name"; break; }; done
+  [ -n "$live" ] || continue
+  seen[$name]=1
+  clone="$H/.local/share/tinderbox/sources/$(basename "$src")-$(basename "$(dirname "$src")")"
+  base="$(mktemp -d)"
+  if { [ -d "$clone/.git" ] || git clone -q --filter=blob:none --no-checkout "$src" "$clone"; } 2>/dev/null &&
+     { git -C "$clone" cat-file -e "$pin^{commit}" 2>/dev/null || git -C "$clone" fetch -q --filter=blob:none origin "$pin" 2>/dev/null; } &&
+     git -C "$clone" archive "$pin" "$path" 2>/dev/null | tar -x -C "$base" 2>/dev/null; then
+    if [ -d "$ROOT/upstream/overlays/$name" ]; then cp -R "$ROOT/upstream/overlays/$name/." "$base/$path/"; fi
+    if diff -rq -x __pycache__ -x .DS_Store -x node_modules "$base/$path" "$live" >/dev/null 2>&1; then
+      if [ -d "$ROOT/skills/$name" ]; then rm -rf "$ROOT/skills/$name"; echo "skills/$name matches upstream again (removed)"; fi
+    else
+      [ -d "$ROOT/skills/$name" ] || echo "modified upstream skill: $name (from $live)"
+      copy_dir "$live" "$ROOT/skills/$name"
+    fi
+  else
+    echo "warning: could not read $name at ${pin:0:7} from $src; skills/$name left as it is"
+  fi
+  rm -rf "$base"
+done < <(python3 - "$ROOT/upstream/sources.json" <<'PY'
+import json, sys
+for s in json.load(open(sys.argv[1])).get("skills", []):
+    if s["source"].startswith("https://"):
+        for k in s["skills"]:
+            if isinstance(k, dict) and k.get("path"):
+                print(s["source"], s["pin"], k["name"], k["path"])
+PY
+)
+
 for d in "$ROOT"/skills/*/; do
   name="$(basename "$d")"
   [ -n "${seen[$name]:-}" ] || echo "warning: skills/$name is no longer installed here (left in place)"

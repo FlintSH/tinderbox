@@ -97,10 +97,6 @@
           "name": "leaving-pr-comments",
           "path": "skills/leaving-pr-comments"
         }
-      ],
-      "personal_patches": [
-        "upstream/patches/personal/tstack-no-attribution.patch",
-        "upstream/patches/personal/tstack-council-opus-sol.patch"
       ]
     },
     {

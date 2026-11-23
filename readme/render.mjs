@@ -145,7 +145,8 @@ const inside = [
   "| | skills |", "| --- | --: |",
   `| **mine** · [skills/](skills) | ${data.own.length} |`,
   `| **tinderbox plugin** · [plugins/tinderbox/](plugins/tinderbox) | ${data.router.length} |`,
-  ...data.pinned.map((s) => `| **${short(s)}** · ${repoLink(s)} @ \`${s.pin.slice(0, 7)}\`${/tstack/i.test(s.name) ? ", patched" : ""} | ${s.skills.length} |`),
+  ...data.pinned.map((s) => { const n = data.modified.filter((m) => m.from === s.name).length;
+    return `| **${short(s)}** · ${repoLink(s)} @ \`${s.pin.slice(0, 7)}\`${n ? `, ${n} modified` : ""} | ${s.skills.length} |`; }),
   `| **pstack** · [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) @ \`${data.pstack.pin.slice(0, 7)}\` | ${data.pstack.skills.length} |`,
   `| **total** | **${data.counts.total}** |`,
 ].join("\n");
@@ -153,8 +154,13 @@ const inside = [
 const table = (title, rows) => `**${title}**\n\n| skill | what it does |\n| --- | --- |\n` + rows.map(([n, d]) => `| ${n} | ${cell(d || "")} |`).join("\n");
 const tables = [
   table("mine", data.own.map((s) => [link(s.name), s.description])),
+  ...(data.modified.length ? [table("mine, modified from upstream", data.modified.map((s) => {
+    const src = data.pinned.find((p) => p.name === s.from);
+    return [`${link(s.name)} · from ${short(src)}`, s.description];
+  }))] : []),
   table("tinderbox plugin", data.router.map((s) => [link(s.name), s.description])),
-  ...data.pinned.map((s) => table(`${short(s)} (${s.license.replace("see upstream LICENSE", "upstream license")})`, s.skills.map((n) => [`\`${n}\``, upstreamDesc(s, n)]))),
+  ...data.pinned.map((s) => table(`${short(s)} (${s.license.replace("see upstream LICENSE", "upstream license")})`, s.skills.map((n) =>
+    data.modified.some((m) => m.name === n) ? [`${link(n)} · modified`, upstreamDesc(s, n)] : [`\`${n}\``, upstreamDesc(s, n)]))),
   `**pstack ${data.pstack.version}** (MIT)\n\n` + data.pstack.skills.map((n) => `\`${n}\``).join(" "),
 ].join("\n\n");
 

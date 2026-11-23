@@ -41,10 +41,18 @@ if [ -f check.deny ]; then
   words="$(sed -e 's/[[:space:]]*#.*//' -e '/^$/d' check.deny | paste -sd'|' -)"
   [ -n "$words" ] && deny="$deny|$words"
 fi
+# Modified copies of upstream skills (skills/<name> sharing a name in
+# upstream/sources.json) keep the upstream wording and your changes, so they are
+# personal like router/personal/.
+modified=()
+while read -r n; do [ -n "$n" ] && [ -d "skills/$n" ] && modified+=(":!skills/$n"); done < <(python3 -c '
+import json
+for s in json.load(open("upstream/sources.json"))["skills"]:
+    for k in s["skills"]: print(k if isinstance(k, str) else k["name"])')
 if git ls-files --cached --others --exclude-standard -z -- plugins skills scripts router/core.md router/claude-rules router/codex router/antigravity \
   docs upstream/pstack-codex upstream/patches upstream/overlays \
   ':!skills/fl1nt-design' ':!skills/visual-polish-loop/references/worked-example.md' \
-  ':!skills/visual-polish-loop/references/directions.md' ':!upstream/patches/personal' \
+  ':!skills/visual-polish-loop/references/directions.md' ${modified[@]+"${modified[@]}"} \
   | xargs -0 grep -nIE "$deny" 2>/dev/null; then
   err "personal references in generic files above (move them to router/personal/, or edit check.deny)"
 fi

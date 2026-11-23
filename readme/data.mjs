@@ -43,7 +43,7 @@ function pstackSkills(pin) {
 // Counts only what scripts/install.sh --all installs: your skills, the router
 // plugin, pinned git skills (not the manual Remotion/Playwright steps) and pstack.
 export function repoData(root) {
-  const own = skillsIn(join(root, "skills"));
+  const published = skillsIn(join(root, "skills"));
   const router = skillsIn(join(root, "plugins/tinderbox/skills"));
   const sources = JSON.parse(readFileSync(join(root, "upstream/sources.json"), "utf8"));
   const pinned = sources.skills.filter((s) => s.source.startsWith("https://")).map((s) => ({
@@ -54,10 +54,15 @@ export function repoData(root) {
   const ps = sources.plugins.find((p) => p.name === "pstack");
   const pstack = { version: ps.version, pin: ps.pin, skills: pstackSkills(ps.pin) };
   const pinnedCount = pinned.reduce((n, s) => n + s.skills.length, 0);
+  // skills/<name> that shares a pinned skill's name is your modified copy of it;
+  // it counts once, under its upstream source.
+  const upstreamOf = (name) => pinned.find((s) => s.skills.includes(name));
+  const own = published.filter((s) => !upstreamOf(s.name));
+  const modified = published.filter((s) => upstreamOf(s.name)).map((s) => ({ ...s, from: upstreamOf(s.name).name }));
   return {
-    own, router, pinned, pstack, manual,
+    own, modified, router, pinned, pstack, manual,
     counts: {
-      own: own.length, router: router.length, pinned: pinnedCount, pstack: pstack.skills.length,
+      own: own.length, modified: modified.length, router: router.length, pinned: pinnedCount, pstack: pstack.skills.length,
       total: own.length + router.length + pinnedCount + pstack.skills.length,
     },
   };

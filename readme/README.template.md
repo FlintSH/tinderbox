@@ -44,7 +44,7 @@
 
 1. **watch:** skill folders in `~/.agents`, `~/.claude` and `~/.codex`, the global rules and the tinderbox plugin
 2. **wait:** skip the run until nothing has changed for 2 minutes
-3. **sync:** copy any folder with a `SKILL.md`, minus third-party skills and `sync.ignore`
+3. **sync:** copy any folder with a `SKILL.md`, minus `sync.ignore` and third-party skills you haven't changed
 4. **gate:** `scripts/check.sh` checks frontmatter, JSON, tokens and keys, and AI attribution; a failure blocks the push
 5. **ship:** commit and push to `main` every 10 minutes, re-rendering this README when skills change
 

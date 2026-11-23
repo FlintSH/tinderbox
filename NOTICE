@@ -33,9 +33,11 @@ Fonts. Each keeps its own license:
 Third-party work
 ----------------
 
-upstream/patches/ modifies tstack by Theo Browne
-(https://github.com/t3dotgg/tstack). Upstream text in those patches stays
-under tstack's MIT license, included as upstream/patches/LICENSE-tstack.
+A skills/<name> folder whose name is also listed in upstream/sources.json is
+a modified copy of that upstream skill. Upstream text in it stays under the
+upstream license named there. tstack by Theo Browne
+(https://github.com/t3dotgg/tstack) is MIT licensed, included as
+upstream/LICENSE-tstack.
 
 upstream/pstack-codex/codex.md draws on pstack-claude by Michael Denyer, with Lauren Tan
 (https://github.com/michael-denyer/pstack-claude), MIT licensed. Its license

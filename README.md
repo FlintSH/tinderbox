@@ -45,7 +45,7 @@ every task goes through the same four layers. the rules load first, the router f
 | **tinderbox plugin** · [plugins/tinderbox/](plugins/tinderbox) | 4 |
 | **Vercel** · [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) @ `063bee9` | 3 |
 | **untangle-codebase** · [caldoai/skills](https://github.com/caldoai/skills) @ `f3cf477` | 1 |
-| **tstack** · [t3dotgg/tstack](https://github.com/t3dotgg/tstack) @ `1085050`, patched | 9 |
+| **tstack** · [t3dotgg/tstack](https://github.com/t3dotgg/tstack) @ `1085050`, 4 modified | 9 |
 | **pstack** · [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) @ `6b03002` | 58 |
 | **total** | **78** |
 
@@ -59,6 +59,15 @@ every task goes through the same four layers. the rules load first, the router f
 | [fl1nt-design](skills/fl1nt-design/SKILL.md) | Apply the fl1nt.dev personal brand to interfaces, websites, desktop themes, graphics, documents, and other artifacts using verified website and rice evidence. Use when the user asks for fl1nt.dev branding, the fl1nt design language, or consistency with Flint's rice; do not apply merely because a project belongs to Flint. |
 | [ui-content](skills/ui-content/SKILL.md) | Decide what goes on a screen, in what order, and in which words. Use automatically whenever you create UI (landing pages, docs sites, app screens, forms, dialogs, navigation) and whenever you are asked to clean up, tighten or rewrite the content of existing UI. Run it before building and again on the rendered result. It catches metadata and preamble ahead of the thing the page is for, labels and helper text that restate the obvious, slogan headings, pages where nothing leads, repeated content, and mock-ups standing in for the real product. Not for visual design. |
 | [visual-polish-loop](skills/visual-polish-loop/SKILL.md) | Run a recursive, evidence-driven visual polish loop on a web UI. Audit every page, theme and state against a quality bar (palette, contrast, surfaces, typography, spacing, component states, focus), prototype genuinely different directions on the real pages, implement the winner through design tokens, then capture, have independent reviewers scrutinize, fix and repeat until a round comes back clean, and deliver a PR with before/after evidence and metrics. Use this whenever someone asks to polish, refine, clean up, unify, uplift or "make seamless" a UI, theme, palette or colour system, close a quality gap between two themes or screens, do a design or finish pass with high scrutiny, or says "visual clean loop" / "visual polish loop", even if they only mention colours or say it "doesn't feel as polished as" something. Not for building new features or single-bug visual fixes. |
+
+**mine, modified from upstream**
+
+| skill | what it does |
+| --- | --- |
+| [council](skills/council/SKILL.md) · from tstack | Trigger this if the user says 'council'. |
+| [file-pr](skills/file-pr/SKILL.md) · from tstack | File a concise pull request. Use when the user asks to file, open, or create a PR. |
+| [leaving-pr-comments](skills/leaving-pr-comments/SKILL.md) · from tstack | Use whenever leaving comments on GitHub. |
+| [sol-loop](skills/sol-loop/SKILL.md) · from tstack | Use when the user says "sol loop". |
 
 **tinderbox plugin**
 
@@ -89,13 +98,13 @@ every task goes through the same four layers. the rules load first, the router f
 | --- | --- |
 | `full-send` | Trigger this if the user says 'full send'. |
 | `full-stop` | Trigger this if the user says 'full stop', even as a closing "Full stop." that reads like emphasis. |
-| `council` | Trigger this if the user says 'council'. |
-| `sol-loop` | Use when the user says "sol loop". |
-| `file-pr` | File a concise pull request. Use when the user asks to file, open, or create a PR. |
+| [council](skills/council/SKILL.md) · modified | Trigger this if the user says 'council'. |
+| [sol-loop](skills/sol-loop/SKILL.md) · modified | Use when the user says "sol loop". |
+| [file-pr](skills/file-pr/SKILL.md) · modified | File a concise pull request. Use when the user asks to file, open, or create a PR. |
 | `takeover` | Take over existing work. Use when the user asks to take over a PR, branch, or agent thread, or requests a takeover. |
 | `babysit-pr` | Monitor a pull request through review and CI. Use when the user asks to monitor, watch, or babysit a PR. |
 | `modernize` | For getting old prs up to date. Use when asked to rebase a pr or "modernize". |
-| `leaving-pr-comments` | Use whenever leaving comments on GitHub. |
+| [leaving-pr-comments](skills/leaving-pr-comments/SKILL.md) · modified | Use whenever leaving comments on GitHub. |
 
 **pstack 0.15.36** (MIT)
 
@@ -111,7 +120,7 @@ this repo should automatically update when my agent setup changes.
 
 1. **watch:** skill folders in `~/.agents`, `~/.claude` and `~/.codex`, the global rules and the tinderbox plugin
 2. **wait:** skip the run until nothing has changed for 2 minutes
-3. **sync:** copy any folder with a `SKILL.md`, minus third-party skills and `sync.ignore`
+3. **sync:** copy any folder with a `SKILL.md`, minus `sync.ignore` and third-party skills you haven't changed
 4. **gate:** `scripts/check.sh` checks frontmatter, JSON, tokens and keys, and AI attribution; a failure blocks the push
 5. **ship:** commit and push to `main` every 10 minutes, re-rendering this README when skills change
 

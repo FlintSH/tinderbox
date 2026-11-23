@@ -31,7 +31,8 @@ Every 10 minutes, `scripts/autosync.sh`:
 
 `~/.config/tinderbox/env` (optional, sourced by the sync) sets
 `TINDERBOX_PLUGIN_SRC` when you keep the plugin outside the repo,
-`TINDERBOX_PATCH_SRC` for a folder of `*.patch` files, and `TINDERBOX_PERSONAL`.
+`TINDERBOX_PATCH_SRC` for a folder of `*.patch` files to copy into
+`upstream/patches/`, and `TINDERBOX_PERSONAL`.
 Set `TINDERBOX_PERSONAL=<name>` only if you want your own rules (everything
 outside the tinderbox block) published as `router/personal/<name>.md`; unset,
 they stay on your machine. `TINDERBOX_REMOTE` (in the systemd unit) is the
@@ -42,6 +43,7 @@ repo autosync pushes to.
 | Live path | Repo path |
 | --- | --- |
 | Any skill folder with a `SKILL.md` in `~/.agents/skills`, `~/.claude/skills`, `~/.codex/skills` | `skills/<name>/` |
+| A pinned third-party skill whose live copy differs from upstream | `skills/<name>/` |
 | `$TINDERBOX_PLUGIN_SRC/plugins/tinderbox`, when set | `plugins/tinderbox/` |
 | the tinderbox block in `~/.claude/CLAUDE.md` / `~/.codex/AGENTS.md` | `router/core.md` |
 | everything else in that file, only when `TINDERBOX_PERSONAL` is set | `router/personal/$TINDERBOX_PERSONAL.md` |
@@ -51,7 +53,10 @@ repo autosync pushes to.
 
 Skills are discovered, so a skill a model writes into `~/.agents/skills` shows
 up here on the next run. Third-party skills named in `upstream/sources.json`
-are skipped. To keep a skill local, add its folder name to `sync.ignore` (in
+are skipped while they match their pinned upstream (with any overlay). Once
+you change one, the whole live skill is published as `skills/<name>/` and the
+README lists it as modified; `install.sh --upstream` then leaves it to
+`--skills`. Revert it to upstream and `skills/<name>/` is removed. To keep a skill local, add its folder name to `sync.ignore` (in
 the repo) or `~/.config/tinderbox/sync.ignore` (on the machine, for names you
 would rather not publish at all). A skill removed from the machine is reported, not
 deleted here.

@@ -3,7 +3,7 @@
 #
 #   scripts/install.sh --skills     tinderbox's own skills: real copies in ~/.agents/skills, symlinks in ~/.claude/skills
 #   scripts/install.sh --upstream   Pinned third-party git skills from upstream/sources.json
-#                                   (TINDERBOX_PERSONAL_PATCHES=1 also applies upstream/patches/personal/)
+#                                   (one with a modified copy in skills/ is left to --skills)
 #   scripts/install.sh --plugin     the tinderbox plugin (delivery, visual-qa, pr-follow-through, render-qa) for Claude Code and Codex
 #   scripts/install.sh --pstack     pstack for Claude Code (cursor/plugins) and Codex (built locally), plus model sheets
 #   scripts/install.sh --router     router/core.md as a managed block in ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md; your own rules stay
@@ -72,13 +72,12 @@ for s in json.load(open(sys.argv[1]))["skills"]:
         print("git", s["source"], s["pin"], k["name"], k["path"])
     for p in s.get("patches", []):
         print("patch", p)
-    if os.environ.get("TINDERBOX_PERSONAL_PATCHES") == "1":
-        for p in s.get("personal_patches", []):
-            print("patch", p)
 PY
   while read -r kind a b c d; do
     case "$kind" in
       git)
+        # A modified copy in skills/ replaces the pinned skill (installed by --skills).
+        if [ -d "$ROOT/skills/$c" ]; then echo "= $c: modified copy in skills/$c"; continue; fi
         slug="$(basename "$a")-$(basename "$(dirname "$a")")"; dir="$STATE/sources/$slug"
         if [ ! -d "$dir/.git" ]; then run git clone -q "$a" "$dir"; fi
         run git -C "$dir" fetch -q origin "$b"; run git -C "$dir" -c advice.detachedHead=false checkout -q "$b"
